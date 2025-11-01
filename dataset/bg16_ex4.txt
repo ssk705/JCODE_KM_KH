@@ -1,0 +1,15 @@
+[CODE]  
+public class Bg164 {  
+    public static char getGrade(int score) {  
+        if (score >= 90) {  
+            return 'A';  
+        } else if (score >= 80) {  
+            return 'B';  
+        } else if (score >= 70) {  
+            return 'C';  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: The method does not return a value when 'score' is below 70. The chain of else-if conditions does not cover all possible score ranges.  
+KH: Add a final else clause to return a default grade (e.g., 'F') or ensure all score ranges are accounted for. 

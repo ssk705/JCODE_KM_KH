@@ -1,0 +1,13 @@
+[CODE]  
+import java.util.*;  
+public class Bg704 {  
+    public static void main(String[] args) {  
+        Set set = new HashSet();  
+        set.add("test");  
+        String first = set.iterator().next();  
+        System.out.println(first.substring(1));  
+    }  
+}  
+[OUTPUT]  
+KM: The `set.iterator().next()` returns `Object`, which cannot be directly assigned to `String` or use `substring()` without casting.  
+KH: Cast the result to `String` (e.g., `(String) set.iterator().next()`) or declare `Set<String>` to avoid raw types.  

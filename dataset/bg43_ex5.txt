@@ -1,0 +1,11 @@
+[CODE]  
+import java.util.*;  
+public class CapacityTest {  
+    public static void main(String[] args) {  
+        List<Integer> nums = new ArrayList<>();  
+        nums.ensureCapacity(100);  
+    }  
+}  
+[OUTPUT]  
+KM: The `ensureCapacity()` method is specific to `ArrayList`, but the variable `nums` is declared as `List`, which does not include this method.  
+KH: Declare `nums` as `ArrayList` instead of `List` to use `ensureCapacity()`.

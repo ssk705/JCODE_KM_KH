@@ -1,0 +1,10 @@
+[CODE]  
+public class Account {  
+    double balance;  
+    void updateBalance(double balance) {  
+        balance = balance + 100;  
+    }  
+}  
+[OUTPUT]  
+KM: The parameter 'balance' is updated instead of the instance variable, which remains unchanged.  
+KH: Reference the instance variable explicitly with 'this.balance' to update it correctly.  

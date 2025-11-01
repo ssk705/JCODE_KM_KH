@@ -1,0 +1,13 @@
+[CODE]
+public class Logger {
+    public void logMessage(String msg) {
+        System.out.println(msg);
+    }
+
+    public static void logError(String error) {
+        logMessage("ERROR: " + error);  
+    }
+}
+[OUTPUT]  
+KM:`logMessage()` is an instance method, but `logError()` is static. Static methods cannot directly call non-static methods.
+KH: Instantiate `Logger` in `logError()` (e.g., `new Logger().logMessage(...)`), or make `logMessage()` static if state isn’t needed.   

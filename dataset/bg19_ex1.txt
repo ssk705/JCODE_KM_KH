@@ -1,0 +1,13 @@
+[CODE]  
+interface Sound {  
+    void makeSound();  
+    void stopSound();  
+}  
+class Animal implements Sound {  
+    public void makeSound() {  
+        System.out.println("Animal sound");  
+    }  
+}  
+[OUTPUT]  
+KM: The class 'Animal' does not implement the 'stopSound()' method declared in the 'Sound' interface, forcing it to be abstract.  
+KH: Add the missing 'stopSound()' method in the 'Animal' class or declare the class as abstract if it shouldn't be instantiated.  

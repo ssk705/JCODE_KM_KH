@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg93 {  
+    public Test(); {  
+        System.out.println("Constructor called");  
+    }  
+    public static void main(String[] args) {  
+        Test t = new Test();  
+    }  
+}  
+[OUTPUT]  
+KM: The semicolon after the constructor header `Test();` prevents the constructor body from executing when the object is created.  
+KH: Remove the semicolon after the constructor header to link the body to the constructor.  

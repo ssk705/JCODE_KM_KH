@@ -1,0 +1,9 @@
+[CODE]  
+public class MultiArray {  
+    public static void main(String[] args) {  
+        int[][] matrix = newint[3][3];  
+    }  
+}  
+[OUTPUT]  
+KM: Missing space after 'new' in multi-dimensional array declaration. 'newint' is not a valid type.  
+KH: Insert a space between 'new' and 'int' to allocate the array correctly.

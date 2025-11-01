@@ -1,0 +1,13 @@
+[CODE]  
+import java.util.ArrayList;  
+public class Bg104 {  
+    public static void main(String[] args) {  
+        ArrayList<Integer> list = new ArrayList<>();  
+        list. add(10);  
+        System.out.println(list);  
+    }  
+    
+}  
+[OUTPUT]  
+KM: A space after "list." in "list. add(10)"  is considered bad style.  
+KH: Eliminate the space between "list." and "add" to correctly invoke the method as "list.add(10)".  

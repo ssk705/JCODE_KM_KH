@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg14 {  
+    public static boolean isEqual(String a, String b) {  
+        return a == b;  
+    }  
+    public static void main(String[] args) {  
+        System.out.println(isEqual("test", new String("test")));  
+    }  
+}  
+[OUTPUT]  
+KM: Returning 'a == b' in a method intended to check string equality incorrectly compares references instead of values.  
+KH: Modify the return statement to use '.equals()' after checking for null safety (e.g., a != null && a.equals(b)).  

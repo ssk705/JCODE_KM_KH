@@ -1,0 +1,11 @@
+[CODE]  
+public class LoopExample {  
+    public static void main(String[] args) {  
+        for (i int = 0; i < 5; i++) {  
+            System.out.println(i);  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: The loop variable `i` is declared with the name before the type (`i int`), which is invalid syntax.  
+KH: Correct the loop variable declaration by placing the type `int` before the variable name `i`. 

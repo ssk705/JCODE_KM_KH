@@ -1,0 +1,12 @@
+[CODE]  
+public class AverageCalculator {  
+    public static void main(String[] args) {  
+        int sum = 9;  
+        int count = 2;  
+        double average = sum / count;  
+        System.out.println(average);   
+    }  
+}  
+[OUTPUT]  
+KM: The division of two integers (sum and count) results in an integer (4), which is then implicitly cast to a double (4.0), truncating the decimal part.  
+KH: Cast one of the operands to double before division (e.g., (double)sum / count) to ensure floating-point division.  

@@ -1,0 +1,9 @@
+[CODE]  
+public class StudentDatabase {  
+    public static void main(String[] args) {  
+        HashMap<Integer, String> students = new HashMap<>();  
+    }  
+}  
+[OUTPUT]  
+KM: The HashMap class from java.util is used without importing it, causing a compilation error.  
+KH: Import java.util.HashMap at the top of the file or use the fully qualified name java.util.HashMap in the code.  

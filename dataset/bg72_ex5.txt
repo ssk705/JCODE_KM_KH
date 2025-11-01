@@ -1,0 +1,12 @@
+[CODE]
+public class AverageLength {
+    public static void main(String[] args) {
+        String s1 = "cat";
+        String s2 = "elephant";
+        double avg = (s1 + s2) / 2.0;
+        System.out.println("Average length: " + avg);
+    }
+}
+[OUTPUT]
+KM:Type mismatch: Arithmetic division `/` applied to a `String` (result of `s1 + s2`, which is concatenation).  
+KH: Compute `(s1.length() + s2.length()) / 2.0` to average the **lengths of the strings**.

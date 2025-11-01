@@ -1,0 +1,12 @@
+[CODE]  
+public class ArrayExample {
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 30};
+        int index = 0;
+        System.out.println("Value: " + numbers[index++]);
+        System.out.println("Index: " + index);
+    }
+}  
+[OUTPUT]  
+KM: Using post-increment (`numbers[index++]`) accesses the array at the *original* `index` value (0) *before* incrementing it. The increment takes effect *after* the array access.
+KH: If you need to access element 1 immediately, use pre-increment (`++index`) or manually increment before access. Verify whether you intend to use the current or next index position.

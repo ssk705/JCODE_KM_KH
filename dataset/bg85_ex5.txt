@@ -1,0 +1,21 @@
+[CODE]
+public class LinkedList {
+    Node head;
+    class Node {
+        int data;
+        Node next;
+        Node(int d) { data = d; }
+    }
+    int getSum() {
+        Node current = head;
+        int sum = 0;
+        do {
+            sum += current.data;
+            current = current.next;
+        } while (current != null);
+        return sum;
+    }
+}
+[OUTPUT]
+KM:Using a `do-while` loop without checking if `head` is `null`. If the list is empty, `current` will be `null`, causing a `NullPointerException` at `current.data`.  
+KH:Replace `do-while` with a `while` loop that checks `current != null` before accessing fields. Initialize traversal after verifying non-empty list.

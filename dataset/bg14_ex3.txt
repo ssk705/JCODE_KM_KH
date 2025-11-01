@@ -1,0 +1,14 @@
+[CODE]  
+public class Bg143 {  
+    public static boolean isEven(int num) {  
+        if (num % 2 == 0) {  
+            return true;  
+        }  
+    }  
+    public static void main(String[] args) {  
+        System.out.println(isEven(7));  
+    }  
+}  
+[OUTPUT]  
+KM: The method `isEven` does not return a value when `num` is odd, causing a compilation error due to incomplete return paths.  
+KH: Add an `else` block or a default `return false;` statement to handle the case where `num` is odd.  

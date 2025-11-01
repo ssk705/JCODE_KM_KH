@@ -1,0 +1,15 @@
+[CODE]
+package data;
+public class Sensor {
+    protected int value = 0;
+}
+
+package controller;
+public class Robot {
+    void readSensor(Sensor s) {
+        System.out.println(s.value);
+    }
+}
+[OUTPUT]
+KM:`protected` members are accessible by subclasses **or classes in the same package**. `Robot` is in a different package and **not a subclass** of `Sensor`.  
+KH:Declare `Robot` as a subclass of `Sensor`, move both classes to the same package, or change `value` to `public` if appropriate.

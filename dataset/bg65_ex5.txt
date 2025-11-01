@@ -1,0 +1,13 @@
+public[CODE]  
+ class NameCombiner {  
+    public static String combine(String first, String last) {  
+        return first + " " + last;  
+    }  
+    public static void main(String[] args) {  
+        String fullName = combine("Alice" "Smith");  
+        System.out.println(fullName);  
+    }  
+}  
+[OUTPUT]  
+KM: Missing comma between the string literals `"Alice"` and `"Smith"` in the `combine` method call.  
+KH: Separate string arguments with a comma, e.g., `combine("Alice", "Smith")`.

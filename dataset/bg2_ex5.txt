@@ -1,0 +1,11 @@
+[CODE]
+public class Bg25 {
+    public static void main(String[] args) {
+        int a = 3, b = 5;
+        String result = (a = b) ? "Equal" : "Not equal";
+        System.out.println(result);
+    }
+}
+[OUTPUT]
+KM: The assignment 'a = b' in the ternary condition modifies the value of a and evaluates to an int, which is not a boolean, causing a compilation error.
+KH: Replace '=' with '==' to compare a and b without modifying their values.

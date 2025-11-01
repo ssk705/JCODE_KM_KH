@@ -1,0 +1,14 @@
+[CODE]  
+public class Book {  
+    String title;  
+    public Book(String t) { title = t; }  
+    public String ToString() { return title; }  
+    public static void main(String[] args) {  
+        Book b = new Book("Java 101");  
+        String s = "Book: " + b.ToString();  
+        System.out.println(s);  
+    }  
+}  
+[OUTPUT]  
+KM: The method `ToString` is explicitly called with an uppercase 'T' and 'S', which is not the standard `toString()` method. This bypasses the intended override and may not use the custom implementation.  
+KH: Use `toString()` (lowercase 't' ) when concatenating or printing to ensure the overridden method is invoked.  

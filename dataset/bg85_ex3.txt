@@ -1,0 +1,15 @@
+[CODE]
+class LinkedList {
+    Node head;
+    void deleteLast() {
+        if (head == null) return;
+        Node current = head;
+        while (current.next != null) {
+            current = current.next;
+        }
+        current = null;
+    }
+}
+[OUTPUT]
+KM:   Setting `current = null` only nullifies a local variable, not the actual last node.  
+KH: Track the *previous* node during traversal, then set `prev.next = null` to remove the last node.

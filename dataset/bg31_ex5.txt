@@ -1,0 +1,14 @@
+[CODE]
+public class Car {
+    String model;
+    public Car(String model) { this.model = model; }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car[] garage = new Car[2]{"Sedan", "SUV"};   
+    }
+}
+[OUTPUT]
+KM:Primitive arrays (e.g., `int[]`) can use `{value1, value2}` initialization, but object arrays require *object instances*
+KH:initialize object arrays with `new Car(...)` instances inside the braces: `{new Car("Sedan"), new Car("SUV")}`.

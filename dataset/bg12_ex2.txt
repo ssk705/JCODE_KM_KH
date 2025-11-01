@@ -1,0 +1,13 @@
+[CODE]  
+public class Bg122 {  
+    public static String getSchoolName() {  
+        return "ABC University";  
+    }  
+    public static void main(String[] args) {  
+        Student student = new Student();  
+        System.out.println(student.getSchoolName());  
+    }  
+}  
+[OUTPUT]  
+KM: The static method `getSchoolName` belongs to the class `Student`, not to its instances. Using `student.getSchoolName()` incorrectly treats it as an instance method.  
+KH: Call the method directly via the class name: `Student.getSchoolName()`. 

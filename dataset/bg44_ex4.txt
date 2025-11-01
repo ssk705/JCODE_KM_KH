@@ -1,0 +1,11 @@
+[CODE]
+public class Example {
+    public static void main(String[] args) {
+        String name = "Alice";
+        name.length;
+    }
+}
+[OUTPUT]
+KM: `name.length` accesses a field/method without parentheses or assignment. For methods, parentheses `()` are required to call them
+KH: Add parentheses to call the method (e.g., `name.length()`) or assign the method reference correctly if intended.  
+ 

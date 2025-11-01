@@ -1,0 +1,14 @@
+[CODE]
+public class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        int result = Calculator.add(5, 3);  
+        System.out.println(result);
+    }
+}
+[OUTPUT]
+KM:You're trying to call `add()` as a static method using `Calculator.add(...)`, but `add()` is declared without `static`. Non-static methods require a class instance.
+KH:Create an instance of `Calculator` using `new`, then call `add()` on that object (e.g., `calc.add(...)`). 

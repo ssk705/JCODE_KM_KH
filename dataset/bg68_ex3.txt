@@ -1,0 +1,15 @@
+[CODE]
+public class Student {
+    String name;
+    public Student(String n) { name = n; }
+
+    static void print(Student s) {
+        System.out.println(s.name);
+    }
+    public static void main(String[] args) {
+        print(Student("Alice"));  
+    }
+}
+[OUTPUT]
+KM:Passing `Student("Alice")` as an argument without `new`. Java requires `new` to instantiate objects.  
+KH:Use `print(new Student("Alice"))` to correctly create the object before passing it. 

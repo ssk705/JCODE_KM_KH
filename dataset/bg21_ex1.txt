@@ -1,0 +1,10 @@
+[CODE]  
+public class Counter {  
+    private int count = 0;  
+    public static void main(String[] args) {  
+        System.out.println(Count);  
+    }  
+}  
+[OUTPUT]  
+KM: The field 'Count' does not exist; variable names are case-sensitive in Java. The correct field name is 'count'.  
+KH: Ensure the variable name matches the declared field exactly, including case sensitivity.  

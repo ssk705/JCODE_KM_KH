@@ -1,0 +1,12 @@
+[CODE]
+public class Bg22 {
+    public static void main(String[] args) {
+        boolean flag = false;
+        if (flag = true) {
+            System.out.println("Flag is true!");
+        }
+    }
+}
+[OUTPUT]
+KM: Assigning 'true' to 'flag' in the if condition instead of comparing with '==', causing the condition to always evaluate to true.
+KH: Use '==' to check if flag is true. Alternatively, simplify the condition to just 'if (flag)' for direct boolean checks.

@@ -1,0 +1,16 @@
+[CODE]
+class Vehicle {
+    private String type;
+    public Vehicle(String type) {
+        this.type = type;
+    }
+}
+
+class Car extends Vehicle {
+    public Car() {
+        System.out.println("Car created");
+    }
+}
+[OUTPUT]
+KM:When a superclass lacks a default constructor, subclasses must explicitly call an existing superclass constructor using `super(...)` as the first line in their own constructor 
+KH:Ensure the subclass constructor explicitly invokes one of the superclass’s declared constructors using `super(arguments)`. This call must be the first statement in the subclass constructor.  

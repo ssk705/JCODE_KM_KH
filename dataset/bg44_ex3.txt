@@ -1,0 +1,9 @@
+[CODE]
+public class Example4 {
+    public static void main(String[] args) {
+        new int[]{1, 2, 3};
+    }
+}
+[OUTPUT]
+KM: Creating an array with `new int[]{...}` is an expression, not a valid statement.  .
+KH: Assign the array to a variable (e.g., `int[] arr = new int[]{1, 2, 3};`) or use it where an expression is expected (e.g., as a method argument).

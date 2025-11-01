@@ -1,0 +1,11 @@
+[CODE]
+public class Animal {
+    public void eat() { }
+}
+
+public class Dog extends {
+    public void bark() { }
+}
+[OUTPUT]
+KM:The `extends` keyword must be followed by a specific class name (e.g., `extends Animal`).  
+KH:Add the parent class name after `extends`, such as `extends Animal`.  

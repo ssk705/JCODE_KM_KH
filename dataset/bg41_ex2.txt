@@ -1,0 +1,16 @@
+[CODE]
+import java.util.*;
+class Shape {}
+class Circle extends Shape {
+    double getRadius() { return 5.0; }
+}
+public class Main {
+    public static void main(String[] args) {
+        List<Shape> shapes = new ArrayList<>();
+        shapes.add(new Circle());
+        Circle c = shapes.get(0);  
+    }
+}
+[OUTPUT]
+KM:`shapes.get(0)` returns a `Shape` reference, but `Circle c` expects a `Circle` object.  Java prohibits implicit downcasting from superclass (`Shape`) to subclass (`Circle`).  
+KH:Explicitly cast `shapes.get(0)` to `Circle` after confirming the object is actually a `Circle` (e.g., using `instanceof`).  

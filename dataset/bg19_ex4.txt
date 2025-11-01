@@ -1,0 +1,12 @@
+[CODE]  
+abstract class Device {  
+    abstract void powerOn();  
+}  
+class Phone extends Device {  
+    void powerOn(int batteryLevel) {  
+        System.out.println("Phone powered on");  
+    }  
+}  
+[OUTPUT]  
+KM: The 'powerOn(int)' method in 'Phone' does not correctly override 'powerOn()' in 'Device' due to mismatched parameters, leaving the class abstract.  
+KH: Correct the method signature of 'powerOn()' in 'Phone' to match the abstract method (no parameters) to resolve the error.  

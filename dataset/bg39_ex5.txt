@@ -1,0 +1,9 @@
+[CODE]
+public class Printer {
+    public static void main(String[] args) {
+        System.out.println(5 + );
+    }
+}
+[OUTPUT]
+KM: The `+` operator requires an identifier/variable/value after it (`5 + ` is incomplete).  
+KH: Provide a valid expression after `+`, such as a number, variable, or method call.

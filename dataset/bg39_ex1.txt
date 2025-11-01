@@ -1,0 +1,10 @@
+[CODE]
+public class Main {
+    public static void main(String[] args) {
+        int = 10;
+        System.out.println();
+    }
+}
+[OUTPUT]
+KM: The declaration `int = 10;` is missing an identifier (variable name) after the type.  
+KH: Add a valid variable name between `int` and `=` (e.g., `int count = 10;`).

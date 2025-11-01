@@ -1,0 +1,11 @@
+[CODE]  
+public class Bg802 {  
+    public static void main(String[] args) {  
+        int[] arr = {1, 2, 3};  
+        String str = "abc";  
+        System.out.println("Array length: " + arr.length() + ", String length: " + str.length);  
+    }  
+}  
+[OUTPUT]  
+KM: Using `.length()` for an array (incorrect, arrays use `.length` as a field) and `.length` for a String (incorrect, Strings use `.length()`).  
+KH: For arrays, use `.length` (no parentheses). For Strings, use `.length()` (with parentheses).  

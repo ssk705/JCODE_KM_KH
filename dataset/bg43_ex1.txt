@@ -1,0 +1,10 @@
+[CODE]  
+public class Test {  
+    public static void main(String[] args) {  
+        Object str = "hello";  
+        System.out.println(str.substring(1));  
+    }  
+}  
+[OUTPUT]  
+KM: The variable `str` is declared as `Object`, which does not have the `substring()` method, even though the actual object is a `String`.  
+KH: Declare `str` as a `String` type or cast it to `String` before calling `substring()`.  

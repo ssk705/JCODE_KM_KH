@@ -1,0 +1,13 @@
+[CODE]
+public class Bg243 {
+    public static void main(String[] args) {
+        int result;
+        if (args.length > 0) {
+            result = 10;
+        }
+        System.out.println(result);   
+    }
+}
+[OUTPUT]
+KM: `result` may remain uninitialized if `args.length` is 0. Java requires definite assignment.  
+KH: Initialize `result` when declared OR add an `else` branch to cover all code paths.

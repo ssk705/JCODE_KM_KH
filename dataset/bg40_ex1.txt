@@ -1,0 +1,10 @@
+[CODE]
+public class Greeting {
+    public static void main(String[] args) {
+        System.out.printLine("Hello, World!");
+    }
+}
+[OUTPUT]
+KM: The method `printLine` does not exist in Java. This is a misspelling of the standard `println` method.  
+KH: Change `printLine` to `println` to correctly output the string with a newline.  
+ 

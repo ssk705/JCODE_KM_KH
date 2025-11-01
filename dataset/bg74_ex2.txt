@@ -1,0 +1,16 @@
+[CODE]  
+public class CheckNegative {  
+    public static void main(String[] args) {  
+        int[] nums = {3, -2, 5, 0, -1};  
+        int i = 0;  
+        do {  
+            if (nums[i] < 0) {  
+                System.out.println("Negative found at index " + i);  
+            }  
+            i++;  
+        } while (nums[i] >= 0);  
+    }  
+}  
+[OUTPUT]  
+KM: Using a **do-while** loop to check for negatives assumes the loop body runs only when the condition holds, but it executes at least once, risking an out-of-bounds index (e.g., when all elements are negative).  
+KH: Use a **while** loop with a condition that checks both the index bounds and the element value to avoid invalid array access.  

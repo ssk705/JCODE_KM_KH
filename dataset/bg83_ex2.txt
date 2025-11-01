@@ -1,0 +1,11 @@
+[CODE]  
+public class Test {  
+    int value = 42;  
+    public static void main(String[] args) {  
+        Test obj = new Test();  
+        System.out.println("Object: " + obj.Tostring());  
+    }  
+}  
+[OUTPUT]  
+KM: The method `Tostring` is called with an uppercase 'T' and lowercase 'string', which does not match the correct `toString()` method name. This causes a compilation error.  
+KH: Replace `Tostring()` with `toString()` (lowercase 't') to invoke the correct method.  

@@ -1,0 +1,10 @@
+[CODE]  
+public class Bg73 {  
+    String class = "Freshman";  
+    public void printClass() {  
+        System.out.println(class);  
+    }  
+}  
+[OUTPUT]  
+KM: Using the keyword 'class' as a variable name, which is invalid because 'class' is a reserved keyword for defining classes.  
+KH: Rename the variable to a non-keyword identifier, such as 'studentClass' or 'year'.  

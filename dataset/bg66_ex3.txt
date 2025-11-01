@@ -1,0 +1,12 @@
+[CODE]  
+public class Person {  
+    public Person(String name; int age) {  
+        System.out.println(name + " is " + age + " years old.");  
+    }  
+    public static void main(String[] args) {  
+        Person p = new Person("Alice", 25);  
+    }  
+}  
+[OUTPUT]  
+KM: Semicolon mistakenly used in the constructor parameter list instead of a comma, leading to a compilation error.  
+KH: Replace semicolons with commas between parameters in the constructor declaration. 

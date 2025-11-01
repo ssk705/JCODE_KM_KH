@@ -1,0 +1,11 @@
+[CODE]  
+public class Area {  
+    public static void main(String[] args) {  
+        double area = computeArea(5.0);  
+        System.out.println(area);  
+    }  
+       
+}  
+[OUTPUT]  
+KM: The method "computeArea" is called but not defined in the class, leading to a compilation error.  
+KH: Define the "computeArea" method with the correct parameters and return type in the class.  

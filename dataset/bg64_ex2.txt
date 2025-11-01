@@ -1,0 +1,13 @@
+[CODE]  
+public class Person {  
+    String name;  
+    public void Person(String name) {  
+        this.name = name;  
+    }  
+    public static void main(String[] args) {  
+        Person p = new Person("Alice");  
+    }  
+}  
+[OUTPUT]  
+KM: The constructor for `Person` is incorrectly declared with a `void` return type, making it a method rather than a constructor.  
+KH: Remove the `void` keyword from the constructor declaration to define it properly.  

@@ -1,0 +1,11 @@
+[CODE]  
+public class SubstringExample {  
+    public static void main(String[] args) {  
+        String text = "example";  
+        String sub = substring(0, 3);  
+        System.out.println(sub);  
+    }  
+}  
+[OUTPUT]  
+KM: The method "substring" is called without an object, but it is an instance method of the String class.  
+KH: Call "substring" on a String object (e.g., text.substring(0, 3)).  

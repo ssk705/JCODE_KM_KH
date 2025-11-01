@@ -1,0 +1,17 @@
+[CODE]
+public class TrafficLight {
+    public static void main(String[] args) {
+        String light = "yellow";
+        switch (light) {
+            case "red":
+                System.out.println("Stop!");
+            case "yellow":
+                System.out.println("Prepare to stop.");
+            case "green":
+                System.out.println("Go!");
+        }
+    }
+}
+[OUTPUT]
+KM:No `break` in any case leads to sequential execution of all subsequent cases
+KH:Insert `break;` before the next `case` to prevent fall-through after each action.  

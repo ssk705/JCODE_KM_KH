@@ -1,0 +1,11 @@
+[CODE]
+public class Calculator {
+    public static void main(String[] args) {
+        System.out.println(add(2, 3));
+    }
+    public static int add(int a, int b) {
+        return a + b;
+    }
+[OUTPUT]
+KM:The class `Calculator ` lacks a closing brace after the `add` method. The compiler expects a final brace to match the opening brace of the class.  
+KH:Insert one closing curly brace `}` at the end of the file to close the `Calculator` class body

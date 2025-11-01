@@ -1,0 +1,12 @@
+[CODE]
+public class MissingSemicolon5 {
+    public static int calculate() {
+        return 42:
+    }
+    public static void main(String[] args) {
+        System.out.println(calculate());
+    }
+}
+[OUTPUT]
+KM:The `return` statement ends with a colon `:` instead of a semicolon `;`, causing a compilation error in the method body.  
+KH:Replace the colon `:` with a semicolon `;` after the return value `42`.

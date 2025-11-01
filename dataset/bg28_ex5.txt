@@ -1,0 +1,9 @@
+[CODE]  
+public class Bg285 {  
+    public static int square(int n) {  
+        return n * n  
+    }  
+}  
+[OUTPUT]  
+KM: Missing semicolon after the return statement 'return n * n'.  
+KH: Terminate the return statement with a semicolon to ensure correct syntax.

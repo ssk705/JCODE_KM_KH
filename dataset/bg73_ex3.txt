@@ -1,0 +1,13 @@
+[CODE]
+public class UserInput {
+    public static void main(String[] args) {
+        int value;
+        do {
+            value = 1;  
+        } while (value != 0);  
+        System.out.println("Exited");
+    }
+}
+[OUTPUT]  
+KM: `value` is hardcoded to `1`, so the condition `value != 0` always holds, causing an infinite loop.  
+KH: Ensure the loop’s exit condition can be met (e.g., by reading dynamic user input instead of fixed assignments).    

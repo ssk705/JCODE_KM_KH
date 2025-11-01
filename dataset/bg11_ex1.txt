@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg111 {  
+    public static void main(String[] args) {  
+        int age = 10;
+        if (age =< 12) {
+            System.out.println("Child discount applies");
+        } 
+    }  
+}  
+[OUTPUT]  
+KM: The operator `=<` is invalid in Java. The correct operator for "less than or equal to" is `<=`.  
+KH: Replace `=<` with `<=` to properly express "less than or equal to".  

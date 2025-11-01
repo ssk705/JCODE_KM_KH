@@ -1,0 +1,14 @@
+[CODE]  
+public class Bg64 {  
+    public static void main(String[] args) {  
+        boolean isLoggedIn = false;  
+        if { isLoggedIn } {  
+            System.out.println("Welcome!");  
+        } else {  
+            System.out.println("Please log in.");  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: The `if` statement uses curly braces `{}` instead of parentheses `()` to wrap the boolean condition, leading to a compilation error.  
+KH: Enclose the condition `isLoggedIn` in parentheses `()` after the `if` keyword to resolve the syntax error. 

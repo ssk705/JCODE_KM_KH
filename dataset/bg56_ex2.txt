@@ -1,0 +1,12 @@
+[CODE]  
+public class Calculator {  
+    public int add(int a, int b) {  
+        return a + b;  
+    }  
+    public int add(int a, int b) {  
+        return a + b + 1;  
+    }  
+}  
+[OUTPUT]  
+KM: Two methods named 'add' with the same parameter types (int, int) are defined, causing a duplication error.  
+KH: Keep only one version of 'add' or change the parameters to overload the method correctly.  

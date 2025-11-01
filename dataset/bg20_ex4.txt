@@ -1,0 +1,16 @@
+[CODE]
+public class Counter {
+    private int count = 0;
+    
+    public void increment() {
+        count++;
+    }
+
+    public static void resetCounter() {
+        increment();  
+        count = 0;  
+    }
+}
+[OUTPUT]  
+KM:`increment()` is non-static and cannot be called from static `resetCounter()` without an instance.  
+KH: Create a `Counter` object in `resetCounter()` and use its methods/fields, or  Declare `count` and `increment()` as `static` if shared across all instances.  

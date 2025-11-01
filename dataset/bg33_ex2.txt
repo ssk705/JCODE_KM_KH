@@ -1,0 +1,9 @@
+[CODE]  
+public class Bg332 {  
+    public static void main(String[] args) {  
+        Class.forName("com.example.MyClass");  
+    }  
+}  
+[OUTPUT]  
+KM: Class.forName can throw ClassNotFoundException, a checked exception, which is not handled or declared.  
+KH: Wrap the call in a try-catch block or add 'throws ClassNotFoundException' to the main method signature.  

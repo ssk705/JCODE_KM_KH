@@ -1,0 +1,10 @@
+[CODE]
+public class Adder {
+    public int sum(int x, int y) {
+        int result = x + y;
+        retrun result;
+    }
+}
+[OUTPUT]
+KM:The keyword `return` is misspelled as `retrun` in the method body.  
+KH:Correct the spelling to `return` where the result is being sent back from the method.  

@@ -1,0 +1,17 @@
+[CODE]
+public class Stack {
+   private Node top;
+   private class Node {
+        int data;
+        Node next;
+    }
+   public int pop() {
+        int value = top.data;   
+        top = top.next;
+        return value;
+    }
+}
+[OUTPUT]
+KM: Accessing `top.data` without checking if the stack is empty causes `NullPointerException` when popping from an empty stack.  
+KH: Check if `top == null` before popping and handle this case (e.g., throw an exception or return an error).
+

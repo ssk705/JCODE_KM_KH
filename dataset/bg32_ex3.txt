@@ -1,0 +1,16 @@
+[CODE]  
+public class Book {  
+    public Book() {}  
+}  
+
+public class Library {  
+    public static void main(String[] args) {  
+        Book[] books = new Book[3];  
+        for (int i = 0; i < books.length; i++) {  
+            books[i] = new Book;  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: Missing parentheses in 'new Book' inside the loop, causing a syntax error.  
+KH: Append '()' to 'Book' in the loop to correctly instantiate each Book object.  

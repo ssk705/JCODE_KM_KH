@@ -1,0 +1,12 @@
+[CODE]  
+public class DecrementLogic {
+    public static void main(String[] args) {
+        int a = 3;
+        if (a-- == 2) {
+            System.out.println("Condition met");
+        }
+    }
+}
+[OUTPUT]  
+KM:Post-decrement (`a--`) compares the original value (3) with 2, so the condition fails. The decrement happens after the comparison, but the condition is never true.  
+KH:If you meant to decrement first and then compare, use pre-decrement (`--a`). Alternatively, move the decrement outside the condition for clarity.

@@ -1,0 +1,17 @@
+[CODE]
+public class BeverageSelector {
+    public static void main(String[] args) {
+        int choice = 2;  
+        switch (choice) {
+            case 1:
+                System.out.println("Tea selected.");
+            case 2:
+                System.out.println("Coffee selected.");
+            case 3:
+                System.out.println("Juice selected.");
+        }
+    }
+}
+[OUTPUT]
+KM:Fall-through occurs from `case 2` to `case 3` due to missing `break`.  
+KH:Terminate each case with `break;` to ensure only the selected beverage prints.  

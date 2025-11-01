@@ -1,0 +1,15 @@
+[CODE]
+class Animal {}
+class Dog extends Animal {
+    void bark() { System.out.println("Woof!"); }
+}
+public class Main {
+    public static void main(String[] args) {
+        Animal myAnimal = new Animal();
+        Dog myDog = (Dog) myAnimal;  
+        myDog.bark();
+    }
+}
+[OUTPUT]
+KM:You are attempting to downcast an `Animal` object to `Dog`, but `myAnimal` is not actually a `Dog` instance.  This causes a `ClassCastException` at runtime because the object's true type (`Animal`) isn't compatible with `Dog`.  
+KH: Ensure the object is an instance of `Dog` before casting using `instanceof`.  Alternatively, create a `Dog` object instead of `Animal` if you need `Dog`-specific features.  

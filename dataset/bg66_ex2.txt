@@ -1,0 +1,12 @@
+[CODE]  
+public class MathUtils {  
+    public static void printSum(int x; int y; int z) {  
+        System.out.println(x + y + z);  
+    }  
+    public static void main(String[] args) {  
+        printSum(1, 2, 3);  
+    }  
+}  
+[OUTPUT]  
+KM: Incorrect use of semicolons ';' instead of commas ',' to separate multiple parameters in the `printSum` method declaration.  
+KH: Use commas to separate parameters in the method definition (e.g., `int x, int y, int z`).  

@@ -1,0 +1,15 @@
+[CODE]  
+import java.util.HashMap;  
+import java.util.ArrayList;  
+public class Bg625 {  
+    public static void main(String[] args) {  
+        HashMap<ArrayList<String>, String> map = new HashMap<>();  
+        ArrayList<String> keyList = new ArrayList<>();  
+        keyList.add("key");  
+        map.put(keyList, "value");  
+        System.out.println(map.get(keyList));  
+    }  
+}  
+[OUTPUT]  
+KM: The code uses a collection (`ArrayList<String>`) as a map key, which is valid but likely unintended if the goal was to use a single string key.  
+KH: To use a single string key, declare the map as `HashMap<String, String>` and pass a string (e.g., `keyList.get(0)`) instead of the entire list.  

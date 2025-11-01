@@ -1,0 +1,15 @@
+[CODE]
+class Vehicle {
+    private void startEngine() {
+        System.out.println("Engine started");
+    }
+}
+
+class Car extends Vehicle {
+    public void drive() {
+        startEngine();   
+    }
+}
+[OUTPUT]
+KM:Private methods like `startEngine()` are not inherited by subclasses. `Car` cannot directly access `Vehicle`'s private method.  
+KH:Change `startEngine()` to `protected` or `public` in `Vehicle`, or declare a new public method in `Car` to handle the functionality.   

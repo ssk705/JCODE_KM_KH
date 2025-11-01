@@ -1,0 +1,17 @@
+[CODE]
+import java.util.*;
+class Employee {}
+class Manager extends Employee {
+    void approveBudget() { System.out.println("Approved!"); }
+}
+public class Main {
+    public static void main(String[] args) {
+        List<Employee> employees = new ArrayList<>();
+        employees.add(new Manager());
+        Manager m = employees.get(0);  
+        m.approveBudget();
+    }
+}
+[OUTPUT]
+KM:employees.get(0)` returns an `Employee` reference, not a `Manager` reference. Direct assignment to `Manager m` violates type safety (implicit downcasting).  
+KH:Cast the result to `Manager` after verifying its runtime type. Use `instanceof` to avoid `ClassCastException`.  

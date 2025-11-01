@@ -1,0 +1,10 @@
+[CODE]  
+public class ArrayDemo {  
+    public static void main(String[] args) {  
+        numbers int[] = {1, 2, 3};  
+        System.out.println(numbers.length);  
+    }  
+}  
+[OUTPUT]  
+KM: The array declaration `numbers int[]` incorrectly places the variable name before the type `int[]`.  
+KH: Declare arrays with the type first (e.g., `int[] numbers`) followed by the variable name.

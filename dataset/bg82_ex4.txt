@@ -1,0 +1,12 @@
+[CODE]
+public class Power {
+    public static int power(int base, int exp) {
+        if (exp == 0) {
+            return 1;
+        }
+        return base * power(base, exp);
+    }
+}
+[OUTPUT]
+KM: The recursive call `power(base, exp)` reuses the same `exp` instead of decrementing it, causing infinite recursion.  
+KH:  Ensure the recursive call reduces `exp` (e.g., `exp - 1`) so the exponent decreases toward the base case `exp == 0`.  

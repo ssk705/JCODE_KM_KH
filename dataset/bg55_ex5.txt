@@ -1,0 +1,7 @@
+[CODE]  
+interface Configurable {  
+    void setValues(int a, b);  
+}  
+[OUTPUT]  
+KM: The parameter 'b' in the method 'setValues' does not have a type declared. Even in interfaces, every parameter must specify its type.  
+KH: Include the type for 'b' (e.g., 'int') in the method declaration within the interface.

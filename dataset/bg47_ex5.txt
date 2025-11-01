@@ -1,0 +1,11 @@
+[CODE]
+public class Bg475 {
+    public static void main(String[] args) {
+        String text = null;
+        if (text != null & text.length() > 0) {
+            System.out.println("Text valid");
+    }
+}
+[OUTPUT]
+KM:Used bitwise AND (`&`) instead of logical AND (`&&`). Since `text` is `null`, `text.length()` is still evaluated, causing `NullPointerException`.  
+KH:Replace `&` with `&&` to skip `text.length()` when `text != null` is false.  

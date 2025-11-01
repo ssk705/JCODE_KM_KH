@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg103 {  
+    public static void main(String[] args) {  
+        double val = Math. abs(-5.5);  
+        System.out.println(val);  
+    }  
+    
+}  
+[OUTPUT]  
+KM: The space after "Math." in "Math. abs" is considered bad style.  
+KH: Remove the space between "Math." and "abs" to properly call the method as "Math.abs".  
+

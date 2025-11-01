@@ -1,0 +1,10 @@
+[CODE]  
+public class Bg282 {  
+    public static void main(String[] args) {  
+         int sum = 0
+        sum = 10 + 20;
+    }  
+}  
+[OUTPUT]  
+KM: The assignment `int sum = 0` requires a semicolon to form a complete statement.  
+KH: Terminate the line with a semicolon: `int sum = 0;`.

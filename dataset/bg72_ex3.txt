@@ -1,0 +1,12 @@
+[CODE]
+public class CheckEvenLength {
+    public static void main(String[] args) {
+        String text = "OpenAI";
+        if (text % 2 == 0) {
+            System.out.println("Length is even!");
+        }
+    }
+}
+[OUTPUT]
+KM:Type mismatch: Applying the modulus operator `%` to a `String` (`text`), which requires numeric operands
+KH:Compute `text.length() % 2` to check if the **length of the string** is even.

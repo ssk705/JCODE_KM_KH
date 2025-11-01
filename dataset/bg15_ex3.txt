@@ -1,0 +1,10 @@
+[CODE]  
+public class Bg153 {  
+    static int getValue() { return 42; }  
+    public static void main(String[] args) {  
+        System.out.println(getValue);  
+    }  
+}  
+[OUTPUT]  
+KM: 'getValue' is a method and must be called with parentheses '()' to return its value.  
+KH: Add parentheses after 'getValue' to execute the method and obtain the returned integer.  

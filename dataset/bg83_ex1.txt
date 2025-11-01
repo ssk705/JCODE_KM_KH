@@ -1,0 +1,15 @@
+[CODE]  
+public class Student {  
+    private String name;  
+    public Student(String name) { this.name = name; }  
+    public String ToString() {  
+        return "Student: " + name;  
+    }  
+    public static void main(String[] args) {  
+        Student s = new Student("Alice");  
+        System.out.println(s);  
+    }  
+}  
+[OUTPUT]  
+KM: The method `ToString` is defined with an uppercase 'T' and 'S', which does not override the `toString()` method from the Object class. This results in the default `Object.toString()` being called.  
+KH: Rename the method to `toString` with a lowercase 't' and 's' to properly override the method and ensure the custom string is used. 

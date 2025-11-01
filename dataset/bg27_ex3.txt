@@ -1,0 +1,10 @@
+[CODE]
+public class Bg273 {
+    public static void main(String[] args) {
+        System.out.println("Value: " + number);   
+        int number = 10;   
+    }
+}
+[OUTPUT]
+KM: `number` is used before its declaration. Java does not allow forward references for uninitialized variables.
+KH: Declare `number` before using it (e.g., move `int number = 10;` above the print statement).

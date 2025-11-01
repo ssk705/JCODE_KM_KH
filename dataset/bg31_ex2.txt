@@ -1,0 +1,17 @@
+[CODE]
+class Book {
+    String title;
+    Book(String t) { title = t; }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Book[] library = new Book[5];
+        for (int i = 0; i < library.length; i++) {
+            library[i].title = "Book " + i;  
+        }
+    }
+}
+[OUTPUT]
+KM:The loop tries to assign `title` to each `Book` element, but the array contains `null` references. 
+KH:Inside the loop, use `new Book(...)` to create an object before assigning its fields.   

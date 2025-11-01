@@ -1,0 +1,16 @@
+[CODE]
+class Fruit {}
+class Apple extends Fruit {
+    void peel() { System.out.println("Peeling..."); }
+}
+class Banana extends Fruit {}
+public class Main {
+    public static void main(String[] args) {
+        Fruit fruit = new Banana();
+        Apple apple = (Apple) fruit;  
+        apple.peel();
+    }
+} 
+[OUTPUT]
+KM:`fruit` is a `Banana`, not an `Apple`. Casting to `Apple` is invalid.  The inheritance hierarchy (`Banana` and `Apple` are siblings) makes them incompatible for direct casting.  
+KH: Check the object's actual type with `instanceof` before casting.Ensure the reference points to an `Apple` object if you need `Apple`-specific methods.  

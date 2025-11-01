@@ -1,0 +1,13 @@
+[CODE]  
+import java.util.*;  
+public class Bg701 {  
+    public static void main(String[] args) {  
+        List list = new ArrayList();  
+        list.add("Hello");  
+        String s = list.get(0);  
+        System.out.println(s);  
+    }  
+}  
+[OUTPUT]  
+KM: Using a raw `ArrayList` causes `list.get(0)` to return `Object`, which cannot be directly assigned to a `String` variable without casting.  
+KH: Either declare `List<String>` to enable type safety or explicitly cast the result to `String` (e.g., `(String) list.get(0)`).  

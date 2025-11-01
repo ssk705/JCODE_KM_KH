@@ -1,0 +1,10 @@
+[CODE]  
+public class Person {  
+    String name;  
+    public Person(String name) {  
+        name = name;  
+    }  
+}  
+[OUTPUT]  
+KM: The instance variable 'name' is not assigned because the parameter 'name' is assigned to itself, due to missing 'this'.  
+KH: Use 'this.name' in the constructor to differentiate the instance variable from the parameter. 

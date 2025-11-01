@@ -1,0 +1,10 @@
+[CODE]  
+public class Student {  
+    int id;  
+    void setID(int id) {  
+        id = id;  
+    }  
+}  
+[OUTPUT]  
+KM: The parameter 'id' is assigned to itself instead of the instance variable, leaving the instance variable unmodified.  
+KH: Prefix the instance variable with 'this' (e.g., 'this.id = id;') to resolve the shadowing.  

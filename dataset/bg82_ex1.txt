@@ -1,0 +1,9 @@
+[CODE]
+public class Factorial {
+    public static int factorial(int n) {
+        return n * factorial(n - 1);
+    }
+}
+[OUTPUT]
+KM: No base case to stop recursion when `n <= 0`, causing infinite recursion and `StackOverflowError`.  
+KH: Add a base case to handle the smallest value (e.g., when `n == 0` or `n == 1`), where recursion should terminate by returning a specific value.

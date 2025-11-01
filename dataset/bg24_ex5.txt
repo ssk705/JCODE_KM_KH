@@ -1,0 +1,14 @@
+[CODE]
+public class Bg245 {
+    public static void main(String[] args) {
+        int x;
+        boolean condition = false;
+        if (condition) {
+            x = 10;
+        }
+        System.out.println("x is " + x);
+    }
+}
+[OUTPUT]
+KM: The variable 'x' might not be initialized if the 'if' condition is false, leading to a compilation error. Java requires variables to be definitely assigned before use.
+KH: Initialize 'x' when declaring it or provide an else block that assigns a value to 'x' to cover all possible paths.

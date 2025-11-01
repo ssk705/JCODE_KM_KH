@@ -1,0 +1,10 @@
+[CODE]  
+public class DateDemo {  
+    public static void main(String[] args) {  
+        Date today = new Date();  
+        System.out.println(today);  
+    }  
+}  
+[OUTPUT]  
+KM: The Date class (from java.util) is used without importing it, resulting in a "cannot find symbol" error.  
+KH: Add import java.util.Date; at the beginning of the file or explicitly reference the class as java.util.Date in the code.  

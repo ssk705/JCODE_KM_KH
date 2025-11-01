@@ -1,0 +1,12 @@
+[CODE]  
+public class Main {  
+    public static void main(String[] args) {  
+        System.out.println("Hello");  
+    }  
+    public static void main(String[] args) {  
+        System.out.println("World");  
+    }  
+}  
+[OUTPUT]  
+KM: Duplicate method 'main(String[])' with identical parameters and name, leading to a compilation error.  
+KH: Remove one of the duplicate 'main' methods to ensure only one entry point exists.  

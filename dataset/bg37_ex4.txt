@@ -1,0 +1,10 @@
+[CODE]
+public class Output {
+    public static void main(Stirng[] args) {
+        Stirng message = "Hello";
+        System.out.println(message);
+    }
+}
+[OUTPUT]
+KM:The keyword `String` is misspelled as `Stirng` in the method parameter and variable declaration.  
+KH:Replace `Stirng` with `String` in both locations

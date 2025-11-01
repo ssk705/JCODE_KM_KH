@@ -1,0 +1,14 @@
+[CODE]
+public class A {
+    A(String s) {}
+}
+class B extends A {
+    B() {
+        String s = "Hello";
+        s += " World";
+        super(s);
+    }
+}
+[OUTPUT]
+KM: The `super(s)` call occurs after modifying the `s` variable, which is not permitted.  
+KH: Combine the string operations directly in the `super()` argument (e.g., `super("Hello World")`) to eliminate the need for statements before `super()`.

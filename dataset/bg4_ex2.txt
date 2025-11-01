@@ -1,0 +1,11 @@
+[CODE]  
+public class Bg42 {  
+    public static void main(String[] args) {  
+        for (int i = 0; i < 5; i++); {  
+            System.out.println("Iteration: " + i);  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: A semicolon after the `for` loop declaration terminates the loop prematurely, making the code block execute only once.It will not so the code will not compile.   
+KH: Remove the semicolon after the `for` loop to allow the block to iterate as intended.  

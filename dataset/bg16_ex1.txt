@@ -1,0 +1,11 @@
+[CODE]  
+public class Bg161 {  
+    public static boolean isPositive(int num) {  
+        if (num > 0) {  
+            return true;  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: The method 'isPositive' does not return a boolean value when 'num' is 0 or negative. The compiler detects that the method may exit without returning a value.  
+KH: Add an else block to return false or include a default return statement after the if block to cover all possible cases.  

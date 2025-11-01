@@ -1,0 +1,14 @@
+[CODE]  
+public class Bg782 {  
+    public static void main(String[] args) {  
+        int[] nums = {5, 10, 15};  
+        int sum = 0;  
+        for (int i = 1; i <= nums.length; i++) {  
+            sum += nums[i];  
+        }  
+        System.out.println(sum);  
+    }  
+}  
+[OUTPUT]  
+KM: The loop starts at `i = 1` and uses `i <= nums.length`, causing the last iteration to access `nums[nums.length]`, which is out of bounds. Arrays are zero-indexed.  
+KH: Adjust the loop to start at `i = 0` and use `i < nums.length` to iterate over all valid indices.  

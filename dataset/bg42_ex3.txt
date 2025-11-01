@@ -1,0 +1,11 @@
+[CODE]
+public class Counter {
+    public static void main(String[] args) {
+        for (int i = 0; i < 3; i++)
+            System.out.println("Count: " + i);
+            System.out.println("-----");   
+    }
+}
+[OUTPUT]
+KM:Missing braces `{}` for the `for` loop body. The separator `"-----"` prints only once (after the loop), not after each iteration.  
+KH:Add a final closing curly brace `} 

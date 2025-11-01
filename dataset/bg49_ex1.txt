@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg491 {  
+    public static void main(String[] args) {  
+        int[] arr = {1, 2, 3};  
+        if (arr == 5) {  
+            System.out.println("Found 5");  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: The array variable 'arr' is used in the condition instead of an element, leading to a comparison between an array reference and an integer.  
+KH: Use an index (e.g., arr[i]) to access a specific element of the array in the condition.  

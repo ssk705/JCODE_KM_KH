@@ -1,0 +1,11 @@
+[CODE]  
+public class Bg492 {  
+    public static void main(String[] args) {  
+        int[] arr = new int[3];  
+        arr = 10;  
+        System.out.println(arr[0]);  
+    }  
+}  
+[OUTPUT]  
+KM: Assigning a value directly to the array variable 'arr' instead of a specific element, causing a type mismatch (array vs. integer).  
+KH: Use an index (e.g., arr[0] = 10) to assign a value to an element of the array.  

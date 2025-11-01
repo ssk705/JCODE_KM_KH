@@ -1,0 +1,21 @@
+[CODE]
+class Animal {
+    String species;
+    Animal(String s) { species = s; }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal[] zoo = new Animal[2];
+        zoo[0] = new Animal("Tiger");
+        zoo[1] = new Animal("Lion");
+        
+         
+        if (zoo[0] == "Tiger") {  
+            System.out.println("Tiger found!");
+        }
+    }
+}
+[OUTPUT]
+KM:`"Tiger"` is a `String`, while `zoo[0]` is an `Animal` objec
+KH: Compare object fields (e.g., `species`) using `.equals()`, not `==`, and ensure types match.  

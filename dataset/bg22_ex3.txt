@@ -1,0 +1,10 @@
+[CODE]  
+public class Student {  
+    String name;  
+    static void printName() {  
+        System.out.println(name);  
+    }  
+}  
+[OUTPUT]  
+KM: The static method `printName` cannot access the non-static variable `name` without an instance of `Student`.  
+KH: Declare `name` as `static` or modify `printName` to accept a `Student` parameter and use `student.name` to access the value.

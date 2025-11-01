@@ -1,0 +1,9 @@
+[CODE]  
+public class Car {  
+    public static void main(String[] args) {  
+        Car myCar = new Car;  
+    }  
+}  
+[OUTPUT]  
+KM: Missing parentheses '()' after the constructor call 'new Car', leading to a compilation error.  
+KH: Add parentheses after 'Car' to properly invoke the constructor, like 'new Car()'.  

@@ -1,0 +1,15 @@
+[CODE]
+public class Car {
+    private String model;
+    private int year;
+    public Car(String m, int y) {
+        model = m;
+        year = y;
+    }
+    public static void main(String[] args) {
+        Car myCar = new Car();
+    }
+}
+[OUTPUT]
+KM: The constructor Car() is undefined because the class defines a constructor with two parameters (String and int), but the object is instantiated without any arguments.  
+KH: Pass a String and an int as arguments when creating the Car object, or define a no-argument constructor in the Car class.

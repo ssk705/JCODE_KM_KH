@@ -1,0 +1,12 @@
+[CODE]  
+public class Book {{  
+    String title;  
+    public Book(String t) {{ title = t; }}  
+    public static void main(String[] args) {{  
+        Book[] library = new Book[2];  
+        library[0] = new library("1984");  
+    }}  
+}}  
+[OUTPUT]  
+KM: Trying to instantiate a 'Book' object using the array variable name 'library' instead of the class name 'Book'.  
+KH: Use 'new Book("1984")' to create a new Book instance and assign it to the array element.  

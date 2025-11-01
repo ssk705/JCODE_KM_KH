@@ -1,0 +1,13 @@
+[CODE]  
+interface Runnable {  
+    void run();  
+}  
+class Robot implements Runnable {  
+    public int run() {  
+        System.out.println("Robot running");  
+        return 0;  
+    }  
+}  
+[OUTPUT]  
+KM: The 'run()' method in 'Robot' has an incompatible return type (int) compared to the 'void' return type in 'Runnable', making the class abstract.  
+KH: Change the return type of 'run()' in 'Robot' to 'void' to properly implement the interface method.

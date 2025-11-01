@@ -1,0 +1,12 @@
+[CODE]  
+public class StringOperations {  
+    public static String concat(String s1; String s2) {  
+        return s1 + s2;  
+    }  
+    public static void main(String[] args) {  
+        System.out.println(concat("Hello", "World"));  
+    }  
+}  
+[OUTPUT]  
+KM: Parameters `s1` and `s2` in the `concat` method are separated by a semicolon ';' instead of a comma ','.  
+KH: Ensure all method parameters are separated by commas, not semicolons.  

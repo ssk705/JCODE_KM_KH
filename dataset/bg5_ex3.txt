@@ -1,0 +1,11 @@
+[CODE]
+public class Bg53 {
+    public static void main(String[] args) {
+        for(int a = 5, b = 0, a > b, a--, b++) {
+            System.out.println(a + " vs " + b);
+        }
+    }
+}
+[OUTPUT]
+KM: Commas are incorrectly used to separate the loop's initialization, condition, and update sections. Commas in the initialization for multiple variables are correct, but semicolons are required after initialization and condition.
+KH: Replace the first comma after the initialization (between `b = 0` and `a > b`) with semicolons, while keeping commas within the initialization and update sections as needed.

@@ -1,0 +1,10 @@
+[CODE]  
+public class ArrayPrinter {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3};
+        System.out.println(numbers.toString());  
+    }
+} 
+[OUTPUT]  
+KM: `toString()` is called on an array instance, which doesn’t print array contents meaningfully (inherited from `Object`).  
+KH:  Use `Arrays.toString(numbers)` after importing `java.util.Arrays` to print array contents correctly.  

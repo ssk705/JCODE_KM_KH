@@ -1,0 +1,17 @@
+[CODE]
+public class Example4 {
+    public static void main(String[] args) {
+        int num = 2;
+        if (num == 1) {
+            System.out.println("One");
+        } else if (num == 2) {
+            System.out.println("Two");
+         
+        else {
+            System.out.println("Other");
+        }
+    }
+}
+[OUTPUT]
+KM: the else if block is missing a closing brace, causing the else to be unmatched. 
+KH: add the closing brace after the else if's statements.

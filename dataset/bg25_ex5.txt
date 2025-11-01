@@ -1,0 +1,12 @@
+[CODE]
+public class Bg255 {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 10;
+        int sum = a b;  
+        System.out.println("Sum: " + sum);
+    }
+}
+[OUTPUT]
+KM:The line `int sum = a b;` is missing an operator (`+`) between `a` and `b`. Java interprets `a b` as invalid syntax.  
+KH:Insert the addition operator (`+`) between `a` and `b` to calculate the sum.  

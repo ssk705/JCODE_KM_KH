@@ -1,0 +1,10 @@
+[CODE]  
+import java.awt.Rectangle;  
+public class ShapeDemo {  
+    public static void main(String[] args) {  
+        Rectangle rect = new Rectangle(0 0 100 200);  
+    }  
+}  
+[OUTPUT]  
+KM: Missing commas between the constructor parameters `0`, `0`, `100`, and `200` for the `Rectangle` class.  
+KH: Insert commas between each argument in the constructor call, e.g., `new Rectangle(0, 0, 100, 200)`.  

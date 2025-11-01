@@ -1,0 +1,12 @@
+[CODE]  
+import java.util.ArrayList;  
+public class Main {  
+    public static void main(String[] args) {  
+        ArrayList<String> list = new ArrayList<>();  
+        list.add("apple");  
+        list.get(0).charAt(0) = 'A';  
+    }  
+}  
+[OUTPUT]  
+KM: Strings are immutable, and 'charAt()' returns a value, not a reference. Directly modifying a character in a String is impossible.  
+KH: Create a new String with the desired changes and use 'list.set(index, newString)' to update the element.  

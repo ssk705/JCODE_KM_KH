@@ -1,0 +1,14 @@
+[CODE]
+public class Student {
+    private int id;
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s = new Student();
+        System.out.println(s.id);
+    }
+}
+[OUTPUT]
+KM:id` is declared `private` in `Student`, so it's inaccessible outside the `Student` class. Direct access in `Main` causes a compilation error.  
+KH:Declare a public getter method (e.g., `public int getId()`) in `Student` to access `id` from other classes.  

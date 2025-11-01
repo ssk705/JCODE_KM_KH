@@ -1,0 +1,13 @@
+[CODE]
+public class Bg254 {
+    public static void main(String[] args) {
+        int age = 20;
+        boolean isStudent = true;
+        if (age < 25 isStudent) {  
+            System.out.println("You get a discount!");
+        }
+    }
+}
+[OUTPUT]
+KM:The condition `age < 25 isStudent` lacks the logical AND operator (`&&`) to combine both expressions.  
+KH:Add the `&&` operator between `age < 25` and `isStudent` to properly link the conditions.  

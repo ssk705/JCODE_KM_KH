@@ -1,0 +1,14 @@
+[CODE]
+public class Example3 {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i < 3) {
+            System.out.println(i);
+            i++;
+          
+        System.out.println("Loop ended");
+    }
+}
+[OUTPUT]
+KM: missing closing brace causing the following code to be part of the loop.
+KH: add the closing brace after the loop's intended body.

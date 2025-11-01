@@ -1,0 +1,11 @@
+[CODE]  
+import java.util.*;  
+public class Bg432 {  
+    public static void main(String[] args) {  
+        List<String> list = new LinkedList<>();  
+        list.addFirst("test");  
+    }  
+}  
+[OUTPUT]  
+KM: The `addFirst()` method belongs to `LinkedList`, but the variable `list` is declared as `List`, which does not include this method.  
+KH: Declare `list` as a `LinkedList` instead of `List` to access `addFirst()`, or use methods from the `List` interface like `add(0, "test")`.  

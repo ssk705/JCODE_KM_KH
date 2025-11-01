@@ -1,0 +1,9 @@
+[CODE]  
+public class ListExample {  
+    public static void main(String[] args) {  
+        ArrayList<String> list = new ArrayList<>();  
+    }  
+}  
+[OUTPUT]  
+KM: The "ArrayList" class is not imported. Java requires explicit imports for classes outside the "java.lang" package.  
+KH: Add "import java.util.ArrayList;" at the top of the file or use the fully qualified name "java.util.ArrayList".  

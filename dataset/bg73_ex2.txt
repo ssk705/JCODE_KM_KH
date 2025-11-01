@@ -1,0 +1,13 @@
+[CODE]  
+public class LoopExample2 {  
+    public static void main(String[] args) {  
+        int i = 0;  
+        while (i < 5) {  
+            System.out.println(i);  
+            i--;  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: The loop variable `i` is decremented instead of incremented, leading to an infinite loop because `i` never reaches 5.  
+KH: Modify the loop body to increment `i` (e.g., `i++`) so the loop terminates correctly.  

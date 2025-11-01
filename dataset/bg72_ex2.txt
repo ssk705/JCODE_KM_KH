@@ -1,0 +1,12 @@
+[CODE]
+public class ComputeTotal {
+    public static void main(String[] args) {
+        String item = "book";
+        int copies = 3;
+        int totalChars = item * copies;
+        System.out.println("Total characters: " + totalChars);
+    }
+}
+[OUTPUT]
+KM:Type mismatch: Attempting arithmetic multiplication (`*`) between a `String` (`item`) and an `int` (`copies`).  
+KH: Use `item.length() * copies` to multiply the **length of the string** by the number of copies.

@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg113 {  
+ public static void main(String[] args) {  
+        int score = 85;
+        if (score => 90) {
+            System.out.println("Grade A");
+        }
+    }  
+}  
+[OUTPUT]  
+KM:  The operator `=>` is invalid in Java. The correct operator for "greater than or equal to" is `>=`.  
+KH: Replace `=>` with `>=` to properly express "greater than or equal to".  

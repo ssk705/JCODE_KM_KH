@@ -1,0 +1,19 @@
+[CODE]
+ public class DoublyLinkedList {
+     class Node {
+        int data;
+        Node next;
+        Node prev;
+    }
+    public void removeTail() {
+    if (tail == null) return;
+    if (head == tail) {
+        head = tail = null;
+    } else {
+        tail = tail.prev;  
+    }
+}
+}
+[OUTPUT]
+KM: After moving `tail` backwards, the new tail's `next` pointer still references the removed node, causing a dangling forward link.  
+KH: After `tail = tail.prev`, set `tail.next = null` to break the forward link from the new tail to the old removed node.

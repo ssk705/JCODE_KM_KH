@@ -1,0 +1,17 @@
+[CODE]
+public class Sum {
+    public static int sumUpTo(int n) {
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            sum += i;
+        }
+       
+    }
+    public static void main(String[] args) {
+        int total = sumUpTo(5);
+        System.out.println(total);
+    }
+}
+[OUTPUT]
+KM: method declared to return int but lacks a return statement
+KH: add return sum; at the end.

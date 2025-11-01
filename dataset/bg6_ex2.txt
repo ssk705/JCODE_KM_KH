@@ -1,0 +1,14 @@
+[CODE]  
+public class Bg62 {  
+    public static void main(String[] args) {  
+        int marks = 85;  
+        if { marks >= 90 } {  
+            System.out.println("A");  
+        } else if { marks >= 80 } {  
+            System.out.println("B");  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: Both the `if` and `else if` clauses use curly braces `{}` instead of parentheses `()` for their conditions, resulting in syntax errors.  
+KH: Use parentheses `()` to enclose the conditions in both `if` and `else if` statements to fix the errors.  

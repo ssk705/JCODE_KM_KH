@@ -1,0 +1,10 @@
+[CODE]  
+public class Student {  
+    String name;  
+    public static void main(String[] args) {  
+        System.out.println(name);  
+    }  
+}  
+[OUTPUT]  
+KM: Attempting to access the non-static field 'name' directly from a static context (main method). Non-static fields require an object instance.  
+KH: Create an instance of the Student class (e.g., Student s = new Student();) and access 'name' via that instance (e.g., s.name).  

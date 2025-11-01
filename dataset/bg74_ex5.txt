@@ -1,0 +1,18 @@
+[CODE]  
+public class FindElement {  
+    public static void main(String[] args) {  
+        int[] numbers = {5, 10, 15, 20};  
+        boolean found = false;  
+        int i = 0;  
+        do {  
+            if (numbers[i] == 50) {  
+                found = true;  
+            }  
+            i++;  
+        } while (!found);  
+        System.out.println("Found at index: " + (i - 1));  
+    }  
+}  
+[OUTPUT]  
+KM: A do-while loop risks an ArrayIndexOutOfBoundsException if the element is not in the array, as it continues iterating beyond the array’s length.  
+KH: Use a while or for loop with a condition to stop when `i` exceeds the array length, ensuring safe iteration or add (i < numbers.length) as a condition

@@ -1,0 +1,20 @@
+[CODE]
+interface Sortable {
+    void sort();
+}
+
+class QuickSorter {
+    public void sort() {
+        System.out.println("Sorting with quicksort");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Sortable sorter = new QuickSorter();  
+        sorter.sort();
+    }
+}
+[OUTPUT]
+KM:`QuickSorter` is not recognized as a `Sortable` type due to the missing `implements Sortable` declaration.  
+KH:Add the `implements Sortable` clause to the `QuickSorter` class to enable polymorphic assignment.  

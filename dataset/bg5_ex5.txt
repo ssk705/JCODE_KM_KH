@@ -1,0 +1,12 @@
+[CODE]
+public class Bg55 {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3};
+        for(int idx = 0, idx < arr.length, idx++) {
+            System.out.println(arr[idx]);
+        }
+    }
+}
+[OUTPUT]
+KM: The for loop incorrectly uses commas to separate the initialization, condition, and update instead of semicolons.
+KH: Replace the commas after the initialization (`idx = 0`) and condition (`idx < arr.length`) with semicolons to fix the loop syntax.

@@ -1,0 +1,12 @@
+[CODE]  
+public class PhysicsLab {  
+    public static void main(String[] args) {  
+        int distance = 7;  
+        int time = 2;  
+        double speed = distance / time;  
+        System.out.println(speed);  
+    }  
+}  
+[OUTPUT]  
+KM: The division of distance by time (7/2) is evaluated as 3 (integer division), leading to speed being 3.0.  
+KH: Modify the division to use at least one double operand (e.g., distance / (time * 1.0)) to compute the correct value. 

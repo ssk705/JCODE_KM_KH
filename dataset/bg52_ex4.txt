@@ -1,0 +1,10 @@
+[CODE]
+public class Student {
+    public Student(String name, int id) { }
+    public static void main(String[] args) {
+        Student s = new Student("Alice");
+    }
+}
+[OUTPUT]
+KM: The constructor Student(String) is undefined. The Student class expects two parameters (String name and int id), but only one argument is provided.  
+KH: Include both a String (name) and an int (id) as arguments when instantiating the Student object.

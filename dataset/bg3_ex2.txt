@@ -1,0 +1,9 @@
+[CODE]  
+public class Bg32 {  
+    public static void main(String[] args) {  
+        int[] arr = new int{1, 2, 3};  
+    }  
+}  
+[OUTPUT]  
+KM: Using curly braces '{}' instead of square brackets '[]' for array initialization.  
+KH: Use square brackets '[]' after the type when declaring the array and initialize with curly braces preceded by 'new int[]'.  

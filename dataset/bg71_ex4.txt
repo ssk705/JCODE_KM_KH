@@ -1,0 +1,9 @@
+[CODE]  
+public class Calculator {  
+    public static int add(num1 int, num2 int) {  
+        return num1 + num2;  
+    }  
+}  
+[OUTPUT]  
+KM: Method parameters `num1 int` and `num2 int` have the name and type reversed, causing a compilation error.  
+KH: Fix the parameter declarations by specifying the type first (e.g., `int num1`) in the method signature.  

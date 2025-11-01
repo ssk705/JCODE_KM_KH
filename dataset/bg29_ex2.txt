@@ -1,0 +1,11 @@
+[CODE]  
+public class Bg292 {  
+    public static void main(String[] args) {  
+        int count = 3;  
+        Count += 1;    
+        System.out.println("Count: " + count);  
+    }  
+}  
+[OUTPUT]  
+KM: 'Count' uses incorrect capitalization and does not match the declared variable 'count', causing a compilation error due to case sensitivity.  
+KH: Ensure the variable name 'count' is used consistently with the correct lowercase 'c'.  

@@ -1,0 +1,11 @@
+[CODE]
+class LinkedList {
+    Node head;
+    void addFirst(int data) {
+        Node newNode = new Node(data);
+        newNode.next = head;
+    }
+}
+[OUTPUT]
+KM: The `head` pointer is not updated to point to the new node.  
+KH: After setting `newNode.next = head`, update `head = newNode` to point to the new front of the list.

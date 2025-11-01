@@ -1,0 +1,16 @@
+[CODE]  
+public class Bg81 {  
+    public static void swap(int a, int b) {  
+        int temp = a;  
+        a = b;  
+        b = temp;  
+    }  
+    public static void main(String[] args) {  
+        int x = 5, y = 10;  
+        swap(y, x);  
+        System.out.println("x: " + x + ", y: " + y);  
+    }  
+}  
+[OUTPUT]  
+KM: The `swap` method is called with arguments in the wrong order (`y, x` instead of `x, y`), but in Java, primitive parameters are passed by value, so swapping them inside the method has no effect on the original variables.  
+KH: Understand that swapping primitives requires returning values or using a different approach. To fix the argument order mistake, ensure the method is called with `x, y`, but note that this still won’t swap the original variables due to immutability of primitives.  

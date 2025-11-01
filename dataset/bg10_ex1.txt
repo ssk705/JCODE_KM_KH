@@ -1,0 +1,10 @@
+[CODE]  
+public class Bg101 {  
+    public static void main(String[] args) {  
+        System. out.println("Hello, World!");  
+    }  
+    
+}  
+[OUTPUT]  
+KM: A space is incorrectly placed after the period in "System. out.println". the space after the period is considered bad style 
+KH: Remove the space between the period and "out" to correctly call the method as "System.out.println".  

@@ -1,0 +1,21 @@
+[CODE]
+public class ArrayStack {
+    private int[] stack;
+    private int top;
+    
+    public ArrayStack(int capacity) {
+        stack = new int[capacity];
+        top = 0;  
+    }
+    
+    public void push(int value) {
+        stack[top++] = value;
+    }
+    
+    public int pop() {
+        return stack[--top];
+    }
+}
+[OUTPUT]
+KM: Initializing `top = 0` compromises the empty-stack state. The first `pop()` on an empty stack decrements `top` to `-1`, breaking future operations.  
+KH: Initialize `top = -1` to represent an empty stack. Also check for overflow and underflow

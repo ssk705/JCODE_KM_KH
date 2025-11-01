@@ -1,0 +1,12 @@
+[CODE]  
+public class CompareValues {  
+    public static void main(String[] args) {  
+        String input = "5";  
+        if (input == 5) {  
+            System.out.println("Equal");  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: Comparing a String ("5") with an integer (5) using '==' is invalid, as they are different data types.  
+KH: Convert the String to an integer using Integer.parseInt(input) before comparison, and use '==' for primitive int comparisons.  

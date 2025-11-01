@@ -1,0 +1,10 @@
+[CODE]  
+public class Bg71 {  
+    public static void main(String[] args) {  
+        int int = 5;  
+        System.out.println(int);  
+    }  
+}  
+[OUTPUT]  
+KM: Using the keyword 'int' as a variable name, which is invalid because 'int' is a reserved keyword.  
+KH: Rename the variable to a non-keyword identifier, such as 'number' or 'value'.  

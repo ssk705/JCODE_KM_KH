@@ -1,0 +1,9 @@
+[CODE]  
+public class SchoolApp {  
+    public static void main(String[] args) {  
+        Student student = new Student();  
+    }  
+}  
+[OUTPUT]  
+KM: The "Student" class is not defined in the project or imported from an external source.  
+KH: Define the "Student" class in the same package or import it if it resides in another package.  

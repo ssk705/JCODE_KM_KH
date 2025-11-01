@@ -1,0 +1,9 @@
+[CODE]  
+public class DateDemo {  
+    public static void main(String[] args) {  
+        LocalDate date = LocalDate.now();  
+    }  
+}  
+[OUTPUT]  
+KM: "LocalDate" is part of the "java.time" package, which is not imported.  
+KH: Add "import java.time.LocalDate;" at the top of the file to resolve the undefined class error

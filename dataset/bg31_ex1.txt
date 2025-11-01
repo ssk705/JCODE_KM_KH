@@ -1,0 +1,16 @@
+[CODE]
+public class Student {
+    private String name;
+    public Student(String name) { this.name = name; }
+    public String getName() { return name; }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Student[] students = new Student[3];
+        students[0].setName("Alice");  
+    }
+} 
+[OUTPUT]
+KM:Creating an array of objects only allocates space for references (null by default).  
+KH:Initialize each array element (e.g., `students[0] = new Student(...);`) before calling methods on it.

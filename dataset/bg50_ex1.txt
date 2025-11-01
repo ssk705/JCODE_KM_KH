@@ -1,0 +1,15 @@
+[CODE]
+public class Example1 {
+    public static void main(String[] args) {
+        int x = 10;
+        if (x > 5) {
+            System.out.println("x is greater than 5");
+        
+        else {
+            System.out.println("x is 5 or less");
+        }
+    }
+}
+[OUTPUT]
+KM:if block is missing a closing brace, causing the else to be unmatched
+KH:add the closing brace after the if's statements.

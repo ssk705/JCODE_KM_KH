@@ -1,0 +1,14 @@
+[CODE]  
+import java.util.List;  
+
+public class Bg621 {  
+    public static void main(String[] args) {  
+        List<Integer> values = List.of(10, 20, 30);  
+        if (values == 20) {  
+            System.out.println("Found 20");  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: Comparing the collection 'values' directly to the integer 20, which is invalid because a list cannot be equated to a single element.  
+KH: Check if the list contains the value 20 using values.contains(20) instead of comparing the list itself to 20.  

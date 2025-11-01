@@ -1,0 +1,12 @@
+[CODE]
+public class Book {
+    String title;
+    public Book(String t) { title = t; }
+
+    void duplicateBook(Book original) {
+        Book copy = new Book(original);
+    }
+}
+[OUTPUT]
+KM:Using `new Book(original)` assumes a copy constructor exists, but none is defined.  
+KH:Create a copy constructor in `Book` that takes a `Book` object as an argument to initialize the new instance.

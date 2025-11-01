@@ -1,0 +1,17 @@
+[CODE]
+public class ArrayStack {
+    private int[] stack;
+    private int top;
+    
+    public ArrayStack(int capacity) {
+        stack = new int[capacity];
+        top = -1;
+    }
+    
+    public boolean isFull() {
+        return top == stack.length;  
+    }
+}
+[OUTPUT]
+KM: `isFull()` checks if `top == stack.length`, but the valid top index is `stack.length - 1`. This misses overflow when `top == stack.length - 1`, allowing out-of-bounds pushes.
+KH: Fix the condition to `return top == stack.length - 1` to accurately detect a full stack.  

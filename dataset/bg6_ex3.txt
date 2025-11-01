@@ -1,0 +1,14 @@
+[CODE]  
+public class Bg63 {  
+    public static void main(String[] args) {  
+        int number = 7;  
+        if { number % 2 == 0 } {  
+            System.out.println("Even");  
+        } else {  
+            System.out.println("Odd");  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: The `if` statement incorrectly starts with a curly brace `{` after the keyword, which is invalid syntax for defining conditions.  
+KH: Replace the opening curly brace `{` after `if` with an opening parenthesis `(` and close the condition with `)` before the code block.  

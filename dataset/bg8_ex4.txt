@@ -1,0 +1,14 @@
+[CODE]  
+public class Bg84 {  
+    public static int sum(int[] arr) {  
+        int total = 0;  
+        for (int num : arr) total += num;  
+        return total;  
+    }  
+    public static void main(String[] args) {  
+        System.out.println(sum(1, 2, 3));  
+    }  
+}  
+[OUTPUT]  
+KM: The `sum` method expects a single `int[]` argument, but it is invoked with multiple `int` arguments, causing a compilation error.  
+KH: Pass the numbers as an array, e.g., `sum(new int[]{1, 2, 3})`, to match the method’s parameter type.  

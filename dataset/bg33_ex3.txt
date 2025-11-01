@@ -1,0 +1,9 @@
+[CODE]  
+public class Bg333 {  
+    public static void main(String[] args) {  
+        Thread.sleep(1000);  
+    }  
+}  
+[OUTPUT]  
+KM: Thread.sleep can throw InterruptedException, a checked exception, which is not handled or declared.  
+KH: Enclose Thread.sleep in a try-catch block or declare 'throws InterruptedException' in the main method.  

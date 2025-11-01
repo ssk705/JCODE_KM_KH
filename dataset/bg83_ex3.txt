@@ -1,0 +1,15 @@
+[CODE]  
+public class Animal {  
+    String species;  
+    public Animal(String s) { species = s; }  
+    public String tostring() {  
+        return species;  
+    }  
+    public static void main(String[] args) {  
+        Animal a = new Animal("Tiger");  
+        System.out.println(a);  
+    }  
+}  
+[OUTPUT]  
+KM: The method `tostring` is defined with all lowercase letters, so it does not override `toString()`. The default `Object.toString()` will be used instead.  
+KH: Correct the method name to `toString` (lowercase 't', uppercase 'S') to properly override the method.

@@ -1,0 +1,12 @@
+[CODE]
+public class Check {
+    public static void main(String[] args) {
+        booelan flag = true;
+        if (flag) {
+            System.out.println("Flag is true!");
+        }
+    }
+}
+[OUTPUT]
+KM:The keyword `boolean` is misspelled as `booelan` in the variable declaration.  
+KH:Correct the spelling to `boolean` where the variable `flag` is declared  

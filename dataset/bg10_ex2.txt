@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg102 {  
+    public static void main(String[] args) {  
+        String str = "test";  
+        int len = str. length();  
+        System.out.println(len);  
+    }  
+    
+}  
+[OUTPUT]  
+KM: A space after the period in "str. length()" breaks the method call syntax. the space after the period is considered bad style. 
+KH: Ensure there is no space between the object reference and the method name, e.g., "str.length()". 

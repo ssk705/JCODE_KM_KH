@@ -1,0 +1,9 @@
+[CODE]  
+public class MessagePrinter {  
+    public void printMessage(message) {  
+        System.out.println(message);  
+    }  
+}  
+[OUTPUT]  
+KM: The parameter 'message' in the method 'printMessage' is missing its type declaration. Java requires each parameter to have an explicit type.  
+KH: Declare the type of 'message' (e.g., 'String') in the method parameter list. 

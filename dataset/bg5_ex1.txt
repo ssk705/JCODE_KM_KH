@@ -1,0 +1,11 @@
+[CODE]
+public class Bg51 {
+    public static void main(String[] args) {
+        for(int i = 0, i < 5, i++) {
+            System.out.println(i * 2);
+        }
+    }
+}
+[OUTPUT]
+KM: Commas are used to separate the initialization, condition, and update parts of the for loop instead of semicolons.
+KH: Replace commas between the loop components (after initialization and condition) with semicolons to follow Java syntax rules.

@@ -1,0 +1,12 @@
+[CODE]
+public class ConditionalPrint {
+    public static void main(String[] args) {
+        boolean flag = true;
+        if (flag) {
+            System.out.printLine("Condition is true");
+        }
+    }
+}
+[OUTPUT]
+KM: The non-existent method `printLine` is called inside the conditional block.  
+KH: Change `printLine` to `println` to properly display the message when the condition is met.  

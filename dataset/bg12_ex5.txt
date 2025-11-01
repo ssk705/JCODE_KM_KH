@@ -1,0 +1,19 @@
+[CODE]
+public class Counter {
+    public static int count = 0;
+    
+    public static void increment() {
+        count++;
+    }
+}
+
+public class Bg125 {
+    public static void main(String[] args) {
+        Counter c1 = new Counter();
+        c1.increment();   
+        System.out.println(Counter.count);
+    }
+}
+[OUTPUT]
+KM: increment() is a static method but invoked through an instance (c1). Static methods should always be called via the class name, regardless of whether instance creation is syntactically allowed.
+KH: Use Counter.increment() instead of c1.increment() to clarify it's a class-level operation.

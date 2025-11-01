@@ -1,0 +1,15 @@
+[CODE] 
+public class CalculateSum {
+    public static void main(String[] args) {
+        int[] data = {5, 4, 3, 2, 1};
+        int n = data.length;
+        int sum = 0;
+        for (int i = 0; i < n - 1; i++) {
+            sum += data[i];
+        }
+        System.out.println("Sum is: " + sum);
+    }
+}
+[OUTPUT]
+KM: The loop runs from 0 to n-2 because 'i < n - 1' skips the last element. 
+KH: Update the loop condition to 'i < n' to iterate through all elements.  

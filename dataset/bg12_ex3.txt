@@ -1,0 +1,15 @@
+[CODE]  
+public class MathHelper {  
+    public static int max(int a, int b) {  
+        return a > b ? a : b;  
+    }  
+}  
+public class Bg123 {  
+    public static void main(String[] args) {  
+        MathHelper helper = new MathHelper();  
+        System.out.println(helper.max(10, 20));  
+    }  
+}  
+[OUTPUT]  
+KM: The static method `max` is called on an instance `helper`, which is unnecessary and incorrect. Static methods are not tied to object instances.  
+KH: Use `MathHelper.max(10, 20)` instead of creating an instance to invoke the static method.  

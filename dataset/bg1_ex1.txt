@@ -1,0 +1,15 @@
+[CODE]  
+public class Bg11 {  
+    public static void main(String[] args) {  
+        String s1 = new String("hello");  
+        String s2 = new String("hello");  
+        if (s1 == s2) {  
+            System.out.println("Equal");  
+        } else {  
+            System.out.println("Not Equal");  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: Using '==' to compare String objects checks for object identity, not value equality, leading to incorrect results.  
+KH: Replace '==' with the '.equals()' method to compare the actual content of the strings.  

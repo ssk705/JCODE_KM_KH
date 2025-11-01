@@ -1,0 +1,11 @@
+[CODE]  
+public class Bg114 {  
+    public static void main(String[] args) {  
+          for (int i = 10; i => 0; i--) {
+            System.out.println(i);
+        }
+    }  
+}  
+[OUTPUT]  
+KM: Using `=>` (invalid operator) instead of `>=` in the loop condition.  
+KH: Replace `=>` with `>=` to check "greater than or equal to".

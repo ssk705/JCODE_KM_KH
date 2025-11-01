@@ -1,0 +1,9 @@
+[CODE]  
+public class Bg283 {  
+    public static void main(String[] args) {  
+        System.out.println("Hello World")  
+    }  
+}  
+[OUTPUT]  
+KM: Missing semicolon after the method call 'System.out.println("Hello World")'.  
+KH: Add a semicolon at the end of the println statement to terminate it properly.  

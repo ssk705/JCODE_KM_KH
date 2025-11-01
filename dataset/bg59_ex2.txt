@@ -1,0 +1,10 @@
+[CODE]  
+public class Calculator {  
+    public void add() {  
+        static int result = 5 + 3;  
+        System.out.println(result);  
+    }  
+}  
+[OUTPUT]  
+KM: The modifier 'static' cannot be used for the local variable 'result' inside a method. Static variables are class-level, not local.  
+KH: Remove the 'static' keyword from the declaration of 'result' to make it a valid local variable.  

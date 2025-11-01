@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg781 {  
+    public static void main(String[] args) {  
+        int[] arr = {1, 2, 3};  
+        for (int i = 0; i <= arr.length; i++) {  
+            System.out.println(arr[i]);  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: The loop condition uses `i <= arr.length`, which allows `i` to reach `arr.length`, an invalid index since array indices range from 0 to `arr.length - 1`.  
+KH: Change the loop condition to `i < arr.length` to ensure `i` stays within valid array bounds.

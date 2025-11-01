@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg92 {  
+    public static int add(int a, int b); {  
+        return a + b;  
+    }  
+    public static void main(String[] args) {  
+        System.out.println(add(2, 3));  
+    }  
+}  
+[OUTPUT]  
+KM: The semicolon after `add(int a, int b);` incorrectly terminates the method declaration, making the following block unrelated to the method.  
+KH: Delete the semicolon after the method parameters to ensure the body is part of the method.  

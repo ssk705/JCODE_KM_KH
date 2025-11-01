@@ -1,0 +1,19 @@
+[CODE]
+public class ArrayStack {
+    private int[] stack;
+    private int top;
+    private int capacity;
+    
+    public ArrayStack(int size) {
+        stack = new int[size];
+        capacity = size;
+        top = -1;
+    }
+    
+    public void push(int value) {
+        stack[++top] = value;
+    }
+}
+[OUTPUT]
+KM: The `push()` method fails to verify if the stack is full before inserting. This leads to an `ArrayIndexOutOfBoundsException` when pushing beyond the array bounds (e.g., `top == capacity - 1`).  
+KH: Add an overflow check at the start of `push()` (e.g., `if (isFull()) throw new StackOverflowError();`).

@@ -1,0 +1,13 @@
+[CODE]  
+public class Bg583 {  
+    public static void main(String[] args) {  
+         
+       /* Outer comment start
+           /* Attempting a nested comment */
+        System.out.println("This won't print");
+        */
+    }  
+}  
+[OUTPUT]  
+KM: Java does not support nested multi-line comments. The first `*/` inside the outer comment prematurely closes it, causing syntax errors in the remaining code
+KH: Avoid nesting `/* ... */` comments. Use single-line comments (`//`) inside multi-line comments if needed.   

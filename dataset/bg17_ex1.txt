@@ -1,0 +1,16 @@
+[CODE]
+import java.util.ArrayList;
+public class Bg171 {
+    static void addItem(ArrayList<String> list) {
+        list.add("Item");
+    }
+    public static void main(String[] args) {
+        ArrayList<String> listA = new ArrayList<>();
+        ArrayList<String> listB = listA;
+        addItem(listB);
+        System.out.println(listA.size());  
+    }
+}
+[OUTPUT]
+KM: `listB = listA` shares the same `ArrayList` instance. Mutations via `listB` affect `listA`.  
+KH: Clone the object explicitly: `listB = new ArrayList<>(listA)`.  

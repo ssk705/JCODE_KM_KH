@@ -1,0 +1,11 @@
+[CODE]  
+public class Bg35 {  
+    public static void main(String[] args) {  
+        for (int i = 0; i < 5; i++  
+            System.out.println(i);  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: Missing closing parenthesis ')' for the for-loop declaration and mismatched curly braces.  
+KH: Add the missing ')' after "i++" and ensure the loop body is enclosed in curly braces '{}'.

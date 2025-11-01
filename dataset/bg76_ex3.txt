@@ -1,0 +1,14 @@
+[CODE]
+public class ProductCalculator {
+    public static void main(String[] args) {
+        double[] values = {1.5, 2.0, 3.5, 4.0};
+        double product = 1.0;
+        for (int i = 0; i <= values.length - 2; i++) {
+            product *= values[i];
+        }
+        System.out.println("Product: " + product);
+    }
+}
+[OUTPUT]
+KM: The loop condition `i <= values.length - 2` excludes the last element since indexing starts at 0.  
+KH: Adjust the condition to `i < values.length` to iterate through all elements.

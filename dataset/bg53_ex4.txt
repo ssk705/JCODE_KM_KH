@@ -1,0 +1,10 @@
+[CODE]  
+public class Test {  
+    public static void main(String[] args) {  
+        Stirng s = "Hello";  
+        System.out.println(s);  
+    }  
+}  
+[OUTPUT]  
+KM: Misspelling the class name 'String' as 'Stirng', which is not defined in Java.  
+KH: Correct the spelling of the class name to 'String' when declaring the variable.  

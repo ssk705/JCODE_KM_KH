@@ -1,0 +1,16 @@
+[CODE]  
+import java.util.Scanner;  
+public class Bg13 {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+        String input = scanner.next();  
+        if (input == "exit") {  
+            System.out.println("Exiting...");  
+        } else {  
+            System.out.println("Continue...");  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: User-input strings create new objects, so '==' will not work for value comparison even if the text matches "exit".  
+KH: Compare the input with the literal "exit" using '.equals()' (e.g., input.equals("exit")).  

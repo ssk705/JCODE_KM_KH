@@ -1,0 +1,11 @@
+[CODE]
+public class Counter {
+    public static void main(String[] args) {
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
+        }
+    }
+[OUTPUT]
+KM:The `Counter` class definition is incomplete because there is no closing brace after the `for` loop and `main` method
+KH:Add a final closing curly brace `}` at the end of the file to signify the end of the `Counter` class.  
+ 

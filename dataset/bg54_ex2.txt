@@ -1,0 +1,11 @@
+[CODE]
+ public class MathCalculation {
+    public static void main(String[] args) {
+        int x = 3, y = 4, z = 2;
+        int result = x + y * z;
+        System.out.println("Result: " + result);  
+    }
+}
+[OUTPUT]
+KM:The expression `x + y * z` evaluates `y * z` first due to `*` having higher precedence than `+`, leading to `3 + 8 = 11` instead of `(3+4)*2=14`.  
+KH:Enclose addition/subtraction in parentheses when combined with multiplication/division, e.g., `(x + y) * z`.

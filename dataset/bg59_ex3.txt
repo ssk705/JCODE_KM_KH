@@ -1,0 +1,12 @@
+[CODE]  
+public class LoopExample {  
+    public static void main(String[] args) {  
+        for (int i = 0; i < 5; i++) {  
+            private int value = i * 2;  
+            System.out.println(value);  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: The modifier 'private' is invalid for the local variable 'value' declared inside the loop block. Access modifiers are not permitted for local variables.  
+KH: Remove the 'private' modifier from the 'value' declaration to fix the error. 

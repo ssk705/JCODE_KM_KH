@@ -1,0 +1,13 @@
+[CODE]  
+interface Drawable {  
+    void draw();  
+    void resize();  
+}  
+class Circle implements Drawable {  
+    public void draw() {  
+        System.out.println("Drawing circle");  
+    }  
+}  
+[OUTPUT]  
+KM: The 'Circle' class is missing the 'resize()' method required by the 'Drawable' interface, causing it to be abstract.  
+KH: Define the 'resize()' method in 'Circle' to fulfill the interface contract or declare 'Circle' as abstract.  

@@ -1,0 +1,22 @@
+[CODE]
+class A {
+    int x = 10;
+}
+
+class B extends A {
+    int x = 20;
+    public void print() {
+        System.out.println(x);  
+        System.out.println(super.x);  
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        A obj = new B();
+        System.out.println(obj.x);  
+    }
+}
+[OUTPUT]
+KM:Declaring a field `x` in both superclass and subclass creates two separate fields. This is called *field hiding*, not overriding. The `obj.x` in `main` prints `10` because field access is determined by the *reference type* (`A`), not the object type (`B`).  
+KH: Avoid reusing field names in subclasses. If needed, access the superclass field explicitly via `super.x` in the subclass. For polymorphism, use methods (not fields) to access state.

@@ -1,0 +1,14 @@
+[CODE]  
+public class Dog {  
+    public Dog() {}  
+}  
+
+public class Owner {  
+    public static void adoptDog(Dog d) {}  
+    public static void main(String[] args) {  
+        adoptDog(new Dog);  
+    }  
+}  
+[OUTPUT]  
+KM: Constructor call 'new Dog' in the method argument is missing parentheses.  
+KH: Add parentheses to the constructor call to make it 'new Dog()' before passing it to the method.  

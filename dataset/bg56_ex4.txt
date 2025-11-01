@@ -1,0 +1,17 @@
+[CODE]  
+public class Animal {  
+    public void sound() {  
+        System.out.println("Generic sound");  
+    }  
+}  
+class Dog extends Animal {  
+    public void sound() {  
+        System.out.println("Bark");  
+    }  
+    public void sound() {  
+        System.out.println("Woof");  
+    }  
+}  
+[OUTPUT]  
+KM: The method 'sound()' is overridden twice in the 'Dog' class, creating a duplicate method error.  
+KH: Retain only one overriding 'sound()' method in the subclass to resolve the duplication.  

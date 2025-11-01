@@ -1,0 +1,10 @@
+[CODE]  
+public class Bg151 {  
+    public static void main(String[] args) {  
+        Object obj = new Object();  
+        System.out.println(obj.toString);  
+    }  
+}  
+[OUTPUT]  
+KM: The method 'toString' requires parentheses '()' to be called, even if it has no parameters.  
+KH: Add parentheses after 'toString' to invoke the method and retrieve the string representation.

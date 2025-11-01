@@ -1,0 +1,7 @@
+[CODE]  
+public class Student {  
+    public Student(String name);  
+}  
+[OUTPUT]  
+KM: The constructor for Student is declared without a body, which is invalid.  
+KH: Add curly braces {} after the constructor declaration and include initialization code inside. 

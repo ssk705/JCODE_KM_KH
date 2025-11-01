@@ -1,0 +1,17 @@
+[CODE]
+public class Point {
+    int x, y;
+    public Point(int x, int y) { this.x = x; this.y = y; }
+    
+    static void reset(Point p) { p = new Point(0, 0); }   
+    
+    public static void main(String[] args) {
+        Point p = new Point(5, 10);
+        reset(p);
+        System.out.println(p.x);  
+        
+    }
+} 
+[OUTPUT]
+KM:The method `reset` reassigns the *parameter* `p` to a new object. This does not affect the original reference in `main` due to pass-by-value semantics.  
+KH:To modify the original object, change its fields directly (e.g., `p.x = 0; p.y = 0;`) instead of reassigning the parameter. Remember Java passes object references by value.  

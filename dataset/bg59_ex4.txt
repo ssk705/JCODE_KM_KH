@@ -1,0 +1,10 @@
+[CODE]  
+public class Demo {  
+    public void printMessage() {  
+        final protected String msg = "Hello";  
+        System.out.println(msg);  
+    }  
+}  
+[OUTPUT]  
+KM: The modifier 'protected' is not allowed for the local variable 'msg'. Only the 'final' modifier is permitted for local variables.  
+KH: Remove the 'protected' modifier, retaining 'final' if needed, to declare 'msg' correctly. 

@@ -1,0 +1,7 @@
+[CODE]  
+public class Printer {  
+    public void printMessage();  
+}  
+[OUTPUT]  
+KM: The printMessage method lacks a body. Non-abstract methods in concrete classes must have implementations.  
+KH: Either provide a method body using {} or declare the method as abstract and make the class abstract.  

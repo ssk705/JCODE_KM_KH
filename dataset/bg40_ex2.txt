@@ -1,0 +1,10 @@
+[CODE]
+public class MultiPrint {
+    public static void main(String[] args) {
+        System.out.printLine("Line 1");
+        System.out.printLine("Line 2");
+    }
+}
+[OUTPUT]
+KM: Both `printLine` calls are misspelled. Java uses `println` for printing with automatic newlines.  
+KH: Replace every occurrence of `printLine` with `println` to output multiple lines correctly.

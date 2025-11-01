@@ -1,0 +1,13 @@
+[CODE]  
+public class Bg785 {  
+    public static void main(String[] args) {  
+        int n = 4;  
+        int[] arr = new int[n];  
+        for (int i = 0; i <= n; i++) {  
+            arr[i] = i * 2;  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: The loop runs from `i = 0` to `i <= n`, but the array `arr` has valid indices from 0 to `n-1`. Accessing `arr[n]` is invalid.  
+KH: Update the loop condition to `i < n` to prevent exceeding the array’s last index.  

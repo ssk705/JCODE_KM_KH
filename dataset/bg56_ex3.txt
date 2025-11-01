@@ -1,0 +1,12 @@
+[CODE]  
+public class Student {  
+    public Student(String name) {  
+        this.name = name;  
+    }  
+    public Student(String name) {  
+        this.name = name.toUpperCase();  
+    }  
+}  
+[OUTPUT]  
+KM: Duplicate constructor definitions with identical parameters (String name), which is not allowed.  
+KH: Remove one constructor or modify their parameter lists to avoid duplication.  

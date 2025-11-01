@@ -1,0 +1,13 @@
+[CODE]
+public class Bg242 {
+    public static void main(String[] args) {
+        int count;
+        while (count < 5) {
+            System.out.println(count);
+            count++;
+        }
+    }
+}
+[OUTPUT]
+KM: The variable 'count' is used in the loop condition without being initialized, causing a compilation error. Local variables must have a value before they are read.
+KH: Assign an initial value to 'count' (e.g., 0) before the while loop starts.

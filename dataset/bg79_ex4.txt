@@ -1,0 +1,23 @@
+[CODE]
+interface Loggable {
+    void log();
+}
+
+class Event {
+    // Superclass without Loggable relation
+}
+
+class MouseEvent extends Event {
+    public void log() {
+        System.out.println("Logging mouse event");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Loggable event = new MouseEvent();  
+    }
+}
+[OUTPUT]
+KM: `MouseEvent` extends `Event` but fails to declare `implements Loggable`, breaking the `Loggable` type requirement.  
+KH:Modify the `MouseEvent` declaration to `class MouseEvent extends Event implements Loggable`. 

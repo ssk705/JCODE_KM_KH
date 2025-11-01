@@ -1,0 +1,10 @@
+[CODE]  
+public class PrintExample {  
+    public static void main(String[] args) {  
+        int x = 5, y = 10;  
+        System.out.printf("Values: %d %d" x y);  
+    }  
+}  
+[OUTPUT]  
+KM: Missing commas between the parameters `x` and `y` in the `printf` method call, leading to a syntax error.  
+KH: Add commas between each parameter in the method call, e.g., `printf("Values: %d %d", x, y)`.  

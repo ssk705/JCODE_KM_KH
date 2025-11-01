@@ -1,0 +1,15 @@
+[CODE]  
+public class Rectangle {  
+    int width, height;  
+    public void Rectangle(int w, int h) {  
+        width = w;  
+        height = h;  
+    }  
+    public static void main(String[] args) {  
+        Rectangle rect = new Rectangle(10, 20);  
+        System.out.println(rect.width);  
+    }  
+}  
+[OUTPUT]  
+KM: The `void` return type in the `Rectangle` constructor causes the fields `width` and `height` to remain uninitialized (0).  
+KH: Remove `void` from the constructor declaration to allow proper initialization of the object’s state.

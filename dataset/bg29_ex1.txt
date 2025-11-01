@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg291 {  
+    public static void main(String[] args) {  
+        int total = 0;  
+        total += 5;  
+        totle += 10;  
+        System.out.println("Total: " + total);  
+    }  
+}  
+[OUTPUT]  
+KM: The variable 'totle' is misspelled and does not match the declared variable 'total', leading to a compilation error.  
+KH: Correct the spelling of 'totle' to 'total' to ensure the correct variable is referenced.  

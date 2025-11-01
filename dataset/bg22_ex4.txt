@@ -1,0 +1,10 @@
+[CODE]  
+public class BankAccount {  
+    double balance;  
+    public static void displayBalance() {  
+        System.out.println("Balance: " + balance);  
+    }  
+}  
+[OUTPUT]  
+KM: The static method 'displayBalance()' incorrectly references the non-static variable 'balance', which is tied to individual instances.  
+KH: Create a BankAccount object and access 'balance' through it (e.g., account.balance), or redesign the method to be non-static if it needs instance-specific data.  

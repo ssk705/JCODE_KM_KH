@@ -1,0 +1,11 @@
+[CODE]  
+public class VariableInit {  
+    int x;  
+    x = 5;  
+    public static void main(String[] args) {  
+        System.out.println("Value initialized");  
+    }  
+}  
+[OUTPUT]  
+KM: The assignment statement `x = 5;` is outside any method or initializer block, which is invalid syntax.  
+KH: Initialize `x` directly during declaration (e.g., `int x = 5;`) or move the assignment into a method/constructor.  

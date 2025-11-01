@@ -1,0 +1,13 @@
+[CODE]  
+public class Calculator {  
+    int result;  
+    public static void add(int a, int b) {  
+        result = a + b;  
+    }  
+    public static void main(String[] args) {  
+        add(2, 3);  
+    }  
+}  
+[OUTPUT]  
+KM: The static method `add` is incorrectly assigning a value to the non-static variable `result`, which requires an instance of `Calculator` to exist.  
+KH: Declare `result` as static if it should be shared, or redesign the code to use instance methods and variables by creating a `Calculator` object in `main`.  

@@ -1,0 +1,18 @@
+[CODE]
+public class DoublyLinkedList {
+    class Node {
+        int data;
+        Node next;
+        Node prev;
+    }
+    public void insertHead(int data) {
+        Node newNode = new Node();
+        newNode.data = data;
+        newNode.next = head;
+        head.prev = newNode; 
+        head = newNode;
+    }
+}
+[OUTPUT]
+KM:Missing null-check when inserting into an empty list. If `head` is null, accessing `head.prev` causes `NullPointerException`.  
+KH:Check if the list is empty (`head == null`) before modifying `head.prev`. If empty, set `head = newNode` directly. 

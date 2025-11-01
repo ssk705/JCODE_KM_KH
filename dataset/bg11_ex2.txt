@@ -1,0 +1,13 @@
+[CODE]  
+public class Bg112 {  
+    public static void main(String[] args) {  
+        int i = 0;  
+        while (i =< 5) {  
+            System.out.println(i);  
+            i++;  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: Invalid operator '=<' used instead of '<=' for the loop condition, leading to a syntax error.  
+KH: Replace '=<' with '<=' to correctly express "less than or equal to" in the while loop.  

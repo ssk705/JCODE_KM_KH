@@ -1,0 +1,7 @@
+[CODE]  
+public class Calculator {  
+    public int add(int a, int b);  
+}  
+[OUTPUT]  
+KM: The add method is missing its body, leading to a compilation error.  
+KH: Replace the semicolon with curly braces {} and implement the method logic inside them.  

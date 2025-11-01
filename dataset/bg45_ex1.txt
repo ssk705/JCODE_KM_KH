@@ -1,0 +1,10 @@
+[CODE]  
+public class ReadInput {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+        System.out.println(scanner.nextLine());  
+    }  
+}  
+[OUTPUT]  
+KM: The Scanner class from the java.util package is used without importing it, leading to a compilation error.  
+KH: Add an import statement for java.util.Scanner at the top of the file or use the fully qualified name java.util.Scanner when declaring the variable.  

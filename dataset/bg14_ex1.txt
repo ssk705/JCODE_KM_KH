@@ -1,0 +1,16 @@
+[CODE]  
+public class Calculator {  
+    public static int multiply(int a, int b) {  
+        int product = a * b;  
+    }  
+    public static void main(String[] args) {  
+        int result = multiply(3, 4);  
+        System.out.println(result);  
+    }  
+}  
+[OUTPUT]  
+KM: The method `multiply` is declared to return an `int` but lacks a return statement, causing a compilation error when its value is assigned to `result`.  
+KH: Add a `return product;` statement at the end of the `multiply` method to return the computed value
+
+
+

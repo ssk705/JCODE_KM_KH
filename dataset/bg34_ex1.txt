@@ -1,0 +1,10 @@
+[CODE]
+public class MissingSemicolon1 {
+    public static void main(String[] args) {
+        int x = 5:
+        System.out.println(x);
+    }
+}
+[OUTPUT]
+KM:The variable declaration `int x = 5` ends with a colon `:` instead of a semicolon `;`, causing a compilation error.  
+KH:Replace the colon `:` with a semicolon `;` to properly terminate the statement.  

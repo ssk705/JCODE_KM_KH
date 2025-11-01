@@ -1,0 +1,11 @@
+[CODE]
+public class Bg54 {
+    public static void main(String[] args) {
+        for(int count = 10, count > 0, count--) {
+            System.out.println("Countdown: " + count);
+        }
+    }
+}
+[OUTPUT]
+KM: The for loop uses commas instead of semicolons between its components, causing incorrect loop structure and likely unintended behavior.
+KH: Insert semicolons after the initialization (`count = 10`) and condition (`count > 0`) to define the loop structure properly.

@@ -1,0 +1,13 @@
+[CODE]
+public class Car {
+    String model;
+    public Car(String m) { model = m; }
+
+    public static void main(String[] args) {
+        Car myCar = Car("Toyota");   
+        System.out.println(myCar.model);
+    }
+}
+[OUTPUT]
+KM:Attempting to create an object `Car` without the `new` keyword.  
+KH:Use `new Car("Toyota")` to properly allocate memory and call the constructor.  

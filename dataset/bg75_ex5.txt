@@ -1,0 +1,7 @@
+[CODE]  
+public class MathOps {  
+    public double calculateAverage();  
+}  
+[OUTPUT]  
+KM: The calculateAverage method is declared without a body, causing a compilation error.  
+KH: Add curly braces {} and implement the method, ensuring it returns a double value as declared.

@@ -1,0 +1,11 @@
+[CODE]  
+public class Rectangle {  
+    int width;  
+    void setWidth(int width) {  
+        int newWidth = width * 2;  
+        width = newWidth;  
+    }  
+}  
+[OUTPUT]  
+KM: The assignment 'width = newWidth' modifies the parameter, not the instance variable.  
+KH: Use 'this.width' to assign the new value to the instance variable instead of the parameter.

@@ -1,0 +1,13 @@
+[CODE]
+public class Parent {
+    Parent(int x) {}
+}
+class Child extends Parent {
+    Child(int a) {
+        int x = a * 2;
+        super(x);
+    }
+}
+[OUTPUT]
+KM: The variable `x` is declared and assigned before `super()`, which is not allowed.  
+KH: Calculate the value for `x` directly within the `super()` call (e.g., `super(a * 2)`) to avoid needing intermediate statements.

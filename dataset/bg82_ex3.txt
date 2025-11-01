@@ -1,0 +1,14 @@
+[CODE]
+public class Countdown {
+    public static void countdown(int n) {
+        if (n <= 0) {
+            System.out.println("Done!");
+        } else {
+            System.out.println(n);
+            countdown(n);
+        }
+    }
+}
+[OUTPUT]
+KM: The recursive call `countdown(n)` passes the same `n` repeatedly instead of reducing it, preventing progression toward the base case.  
+KH: Modify the recursive call to reduce `n` (e.g., `countdown(n - 1)`) so each step moves closer to the base case.  

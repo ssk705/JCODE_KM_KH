@@ -1,0 +1,10 @@
+[CODE]  
+import java.util.ArrayList;  
+public class ListExample {  
+    public static void main(String[] args) {  
+        ArrayList<Integer> list = newArrayList<>();  
+    }  
+}  
+[OUTPUT]  
+KM: Missing space after 'new' when initializing the ArrayList. 'newArrayList' is not a recognized class.  
+KH: Add a space between 'new' and 'ArrayList' to correctly instantiate the list.  

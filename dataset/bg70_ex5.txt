@@ -1,0 +1,13 @@
+[CODE]  
+import java.util.*;  
+public class Bg705 {  
+    public static void main(String[] args) {  
+       Vector v = new Vector();  
+        v.add(42);  
+        int num = v.get(0);  
+        System.out.println(num);   
+    }  
+}  
+[OUTPUT]  
+KM: The raw `Vector` returns `Object` from `v.get(0)`, which cannot be directly assigned to `int` due to incompatible types.  
+KH: Cast the result to `Integer` (e.g., `(Integer) v.get(0)`) or use generics like `Vector<Integer>` to ensure type safety.

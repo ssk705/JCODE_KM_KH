@@ -1,0 +1,13 @@
+[CODE]  
+public class Bg743 {  
+    public static void main(String[] args) {  
+        for (int i = 0; i < 3; i++) {  
+            for (int j = 0; j < 2; i++) {  
+                System.out.println(i + "," + j);  
+            }  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: Accidentally incrementing the outer loop variable 'i' in the inner **for** loop instead of the inner variable 'j', causing the outer loop to run indefinitely.  
+KH: Ensure the inner loop increments its own variable (e.g., 'j++') to avoid interfering with the outer loop’s control flow.

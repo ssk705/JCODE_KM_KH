@@ -1,0 +1,9 @@
+[CODE]  
+public class Calculator {  
+    public static int add(int x, y) {  
+        return x + y;  
+    }  
+}  
+[OUTPUT]  
+KM: The parameter 'y' in the method 'add' does not have a type specified. Each parameter in a method declaration must explicitly declare its type.  
+KH: Add the correct type (e.g., 'int') before the parameter 'y' in the method declaration.  

@@ -1,0 +1,14 @@
+[CODE]
+public class Bg241 {
+    public static void main(String[] args) {
+        int sum;
+        int[] numbers = {1, 2, 3};
+        for (int num : numbers) {
+            sum += num;
+        }
+        System.out.println("Sum: " + sum);
+    }
+}
+[OUTPUT]
+KM: The variable 'sum' is not initialized before use, leading to a compilation error. Local variables in Java must be initialized before they are accessed.
+KH: Initialize 'sum' with 0 before the loop to accumulate the total correctly.

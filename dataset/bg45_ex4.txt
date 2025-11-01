@@ -1,0 +1,10 @@
+[CODE]  
+public class FileTest {  
+    public static void main(String[] args) {  
+        File file = new File("data.txt");  
+        System.out.println(file.exists());  
+    }  
+}  
+[OUTPUT]  
+KM: The File class from the java.io package is used without an import statement, causing a "cannot find symbol" error.  
+KH: Add import java.io.File; to the imports or use the fully qualified name java.io.File when declaring the File object.

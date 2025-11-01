@@ -1,0 +1,10 @@
+[CODE]
+public class MissingSemicolon4 {
+    public static void main(String[] args) {
+        int a = 10, b = 20:
+        int sum = a + b;
+    }
+}
+[OUTPUT]
+KM:The multi-variable declaration `int a = 10, b = 20` incorrectly uses a colon `:` instead of a semicolon `;` to terminate the statement.  
+KH:Use a semicolon `;` after `b = 20` to end the declaration properly.  

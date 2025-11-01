@@ -1,0 +1,14 @@
+[CODE]  
+public class Student {  
+    String name;  
+    public Student(String n) {  
+        name = n;  
+    }  
+}  
+
+public class TestStudent {  
+    Student s = new Student;  
+}  
+[OUTPUT]  
+KM: Constructor call 'new Student' lacks parentheses '()' and required arguments for the parameterized constructor.  
+KH: Include parentheses '()' and provide the required arguments, e.g., 'new Student("Alice")', to match the constructor's parameters.  

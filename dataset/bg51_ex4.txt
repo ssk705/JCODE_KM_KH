@@ -1,0 +1,17 @@
+[CODE]
+public class Queue {
+    private Node head, tail;
+    private class Node {
+        int data;
+        Node next;
+    }
+    public int dequeue() {
+        if (head == null) throw new RuntimeException("Empty!");
+        Node temp = head;
+        head = head.next;
+        return temp.data;
+    }
+}
+[OUTPUT]
+KM: The dequeued node (`temp`) isn't dereferenced, causing a memory leak as the node remains linked to the queue internally.  
+KH: Set `temp.next = null` before returning to allow garbage collection of the removed node. 

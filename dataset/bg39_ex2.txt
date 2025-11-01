@@ -1,0 +1,9 @@
+[CODE]
+public class Test {
+    public static void main(String[] args) {
+        int[] = {1, 2, 3};
+    }
+}
+[OUTPUT]
+KM: The array declaration `int[] = ...` has no variable name after `[]`.  
+KH: Add an identifier after `[]`, like `int[] numbers = {1, 2, 3};`.

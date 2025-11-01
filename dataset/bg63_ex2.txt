@@ -1,0 +1,11 @@
+[CODE]  
+public class Student {{  
+    String name;  
+    public Student(String n) {{ name = n; }}  
+    public static void main(String[] args) {{  
+        Student s = new s("Alice");  
+    }}  
+}}  
+[OUTPUT]  
+KM: Attempting to call the constructor using the variable name 's' instead of the class name 'Student'.  
+KH: Use the class name 'Student' when creating the object to properly invoke the constructor.  

@@ -1,0 +1,9 @@
+[CODE]  
+public class ArrayExample {  
+    public static void main(String[] args) {  
+        int[] arr = newint[5];  
+    }  
+}  
+[OUTPUT]  
+KM: Missing space after 'new' when declaring an array. 'newint' is treated as an invalid type, causing a compilation error.  
+KH: Insert a space between 'new' and 'int' to properly allocate the array. 

@@ -1,0 +1,13 @@
+[CODE]
+public class Bg23 {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i = 5) {
+            System.out.println("Looping...");
+            i++;
+        }
+    }
+}
+[OUTPUT]
+KM: The assignment 'i = 5' in the while condition causes a compilation error because it evaluates to an int, not a boolean.
+KH: Replace '=' with '==' to check if i equals 5. Adjust the loop logic if the goal is to iterate until i reaches 5.

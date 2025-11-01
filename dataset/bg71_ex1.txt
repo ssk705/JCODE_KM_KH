@@ -1,0 +1,11 @@
+[CODE]  
+public class SumCalculator {  
+    public static void main(String[] args) {  
+        a int = 10;  
+        b int = 20;  
+        System.out.println(a + b);  
+    }  
+}  
+[OUTPUT]  
+KM: Variable declarations have the name and type in reverse order (e.g., `a int` instead of `int a`), leading to a syntax error.  
+KH: Swap the variable name and type to follow the correct syntax: declare the type first, followed by the variable name.  

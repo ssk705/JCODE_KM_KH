@@ -1,0 +1,13 @@
+[CODE]
+public class Bg52 {
+    public static void main(String[] args) {
+        for(int x = 0, x < 3, x++) {
+            for(int y = 0, y < 2, y++) {
+                System.out.println(x + "," + y);
+            }
+        }
+    }
+}
+[OUTPUT]
+KM: Both outer and inner for loops incorrectly use commas to separate their components instead of semicolons.
+KH: Use semicolons after the initialization and condition in both loops while keeping commas only for multiple variables in the same section (if applicable).

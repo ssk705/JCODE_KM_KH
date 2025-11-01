@@ -1,0 +1,11 @@
+[CODE]  
+public class Bg115 {  
+    public static void main(String[] args) {  
+        for (int i = 10; i =< 0; i--) {  
+            System.out.println(i);  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: Incorrect operator '=<' used in the for loop condition instead of '<='. This is not a valid operator in Java.  
+KH: Replace '=<' with '<=' to properly define the loop termination condition.

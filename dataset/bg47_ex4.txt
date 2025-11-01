@@ -1,0 +1,13 @@
+[CODE]
+public class Bg474 {
+    public static void main(String[] args) {
+        boolean isValid = false;
+        int value = 1;
+        if (isValid | value) {
+            System.out.println("Valid data");
+        }
+    }
+}
+[OUTPUT]
+KM:Bitwise operators require both operands to be either `boolean` or integers; mixing types causes compilation errors. 
+KH:Ensure both operands are `boolean` (e.g., `value != 0`) or use logical `||` with pure boolean expressions.  

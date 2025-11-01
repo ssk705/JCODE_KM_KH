@@ -1,0 +1,14 @@
+[CODE]  
+public class Bg623 {  
+    public static void main(String[] args) {  
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4);  
+        for (int num : numbers) {  
+            if (numbers % 2 == 0) {  
+                System.out.println(num + " is even");  
+            }  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: Using the collection 'numbers' in the modulus operation instead of the element 'num', causing a compilation error due to incompatible types.  
+KH: Replace 'numbers' with 'num' in the if condition to check if each element is even.  

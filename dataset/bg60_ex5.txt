@@ -1,0 +1,17 @@
+[CODE]  
+import java.util.ArrayList;  
+public class IteratorExample {  
+    public static void main(String[] args) {  
+        ArrayList<Double> values = new ArrayList<>();  
+        values.add(3.14);  
+        values.add(2.71);  
+        for (var it = values.iterator(); it.hasNext();) {  
+            Double value = it.next();  
+            value = 0.0;  
+        }  
+        System.out.println(values);  
+    }  
+}  
+[OUTPUT]  
+KM: Assigning a new value to 'value' does not modify the element in the ArrayList because it is a copy. Iterators do not allow direct updates via assignment.  
+KH: Use a ListIterator and its set() method (e.g., listIterator.set(0.0)) to replace the current element during iteration.  

@@ -1,0 +1,13 @@
+[CODE]  
+public class Bg75 {  
+    public static void main(String[] args) {  
+        int for = 0;  
+        while (for < 5) {  
+            System.out.println(for);  
+            for++;  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: Using the keyword 'for' as a variable name, which is invalid because 'for' is a reserved keyword for loop declarations.  
+KH: Rename the variable to a non-keyword identifier, such as 'counter' or 'index'.

@@ -1,0 +1,10 @@
+[CODE]  
+public class Bg33 {  
+    public static void main(String[] args) {  
+        String message = 'Hello' + "World";
+        System.out.println(message);
+    }  
+}
+[OUTPUT]  
+KM: Single quotes `'` are invalid for `String` literals. Use double quotes `"` for all `String` values.  
+KH: Change `'Hello'` to `"Hello"` to fix the `String` concatenation. 

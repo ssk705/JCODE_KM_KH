@@ -1,0 +1,13 @@
+[CODE]  
+public class Bg121 {  
+    public static int square(int n) {  
+        return n * n;  
+    }  
+    public static void main(String[] args) {  
+        Calculator calc = new Calculator();  
+        System.out.println(calc.square(5));  
+    }  
+}  
+[OUTPUT]  
+KM: The method `square` is a static class method, but it is invoked on an instance `calc` instead of the class `Calculator`.  
+KH: Replace `calc.square(5)` with `Calculator.square(5)` to call the static method correctly using the class name.  

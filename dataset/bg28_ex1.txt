@@ -1,0 +1,10 @@
+[CODE]  
+public class Bg281 {  
+    public static void main(String[] args) {  
+        int x = 5  
+        System.out.println("x is " + x);  
+    }  
+}  
+[OUTPUT]  
+KM: Missing semicolon at the end of the variable declaration 'int x = 5'.  
+KH: Add a semicolon after the variable assignment to terminate the statement.  

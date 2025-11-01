@@ -1,0 +1,11 @@
+[CODE]  
+public class Bg295 {  
+    public static void main(String[] args) {  
+        int numberOfStudents = 30;  
+        numberOfStudnts += 5;   
+        System.out.println("Students: " + numberOfStudents);  
+    }  
+}  
+[OUTPUT]  
+KM: The variable 'numberOfStudnts' is misspelled (missing 'e' in 'Students'), which does not match the declared variable 'numberOfStudents'.  
+KH: Correct the spelling of 'numberOfStudnts' to 'numberOfStudents' by adding the missing 'e'.

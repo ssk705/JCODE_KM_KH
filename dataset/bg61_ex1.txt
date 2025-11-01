@@ -1,0 +1,13 @@
+[CODE]
+public class Vehicle {
+    public Vehicle() {}
+}
+public class Car extends Vehicle {
+    public Car() {
+        int wheels = 4;
+        super();
+    }
+}
+[OUTPUT]
+KM: The call to `super()` is not the first statement in the constructor, causing a compilation error.  
+KH: Move the `super()` call to the first line of the constructor to ensure the parent class is initialized before any other operations.

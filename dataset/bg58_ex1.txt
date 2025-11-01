@@ -1,0 +1,10 @@
+[CODE]  
+public class Greeting {
+    public static void main(String[] args) {
+        # This should print "Hello, World!"
+        System.out.println("Hello, Java!");
+    }
+} 
+[OUTPUT]  
+KM: Java uses `//` for single-line comments, not `#`. The `#` symbol is invalid and causes a compilation error.  
+KH: Replace `#` with `//` to properly comment a single line.  

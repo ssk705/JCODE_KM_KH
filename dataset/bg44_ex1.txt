@@ -1,0 +1,10 @@
+[CODE]
+public class Example1 {
+    public static void main(String[] args) {
+        int x = 5;
+        x == 10;
+    }
+}
+[OUTPUT]
+KM: The line `x == 10;` is a comparison expression, not a valid standalone statement.  
+KH: Use the result in a condition (e.g., `if (x == 10)`) or assign it to a boolean variable instead of using it alone.

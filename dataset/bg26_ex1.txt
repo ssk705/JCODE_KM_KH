@@ -1,0 +1,13 @@
+[CODE]  
+public class Calculator {  
+    public static void main(String[] args) {  
+        int result = calculateSumm(3, 5);  
+        System.out.println(result);  
+    }  
+    public static int calculateSum(int a, int b) {  
+        return a + b;  
+    }  
+}  
+[OUTPUT]  
+KM: The method name "calculateSumm" does not match the defined method "calculateSum", causing a compilation error due to a typo.  
+KH: Ensure the method name in the call matches the exact spelling of the method definition.  

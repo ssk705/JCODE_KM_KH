@@ -1,0 +1,9 @@
+[CODE]  
+public class Test {  
+    public static void main(String[] args) {  
+        String s = newString("Hello");  
+    }  
+}  
+[OUTPUT]  
+KM: Missing space after the 'new' keyword when instantiating the String object. The compiler interprets 'newString' as an undefined class.  
+KH: Add a space between 'new' and 'String' to correctly create the object.  

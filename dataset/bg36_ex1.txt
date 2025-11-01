@@ -1,0 +1,9 @@
+[CODE]
+ public class Test {
+    public static void main(String[] args) {
+        Object obj = new();
+    }
+}
+[OUTPUT]
+KM:The `new()` operator requires a class name after it (e.g., `new ClassName()`). 
+KH:Specify a valid class name after `new`, like `new Object()`.  

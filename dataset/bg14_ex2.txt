@@ -1,0 +1,13 @@
+[CODE]  
+public class Temperature {  
+    public static double convertToFahrenheit(double celsius) {  
+        double fahrenheit = (celsius * 9/5) + 32;  
+        System.out.println("Converted!");  
+    }  
+    public static void main(String[] args) {  
+        double temp = convertToFahrenheit(25.0);  
+    }  
+}  
+[OUTPUT]  
+KM: The method `convertToFahrenheit` does not return the computed `fahrenheit` value despite being declared with a `double` return type, leading to an error when assigning to `temp`.  
+KH: Replace the print statement with a `return fahrenheit;` statement to return the result.  

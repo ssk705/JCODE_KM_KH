@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg82 {  
+    public static void greet(String name, int age) {  
+        System.out.println("Hello " + name + ", age " + age);  
+    }  
+    public static void main(String[] args) {  
+        greet(25, "Alice");  
+    }  
+}  
+[OUTPUT]  
+KM: The `greet` method is invoked with arguments in the wrong order: `int` is passed where `String` is expected, and vice versa. This causes a type mismatch error.  
+KH: Check the method’s parameter order and pass arguments in the correct sequence: `greet("Alice", 25)`.  

@@ -1,0 +1,12 @@
+[CODE]
+public class Bg21 {
+    public static void main(String[] args) {
+        int x = 7;
+        if (x = 7) {
+            System.out.println("x is 7");
+        }
+    }
+}
+[OUTPUT]
+KM: Using the assignment operator '=' instead of the equality operator '==' in the if condition, which causes a compilation error because the result is an int, not a boolean.
+KH: Replace '=' with '==' in the if condition to check if x equals 7 instead of assigning 7 to x.

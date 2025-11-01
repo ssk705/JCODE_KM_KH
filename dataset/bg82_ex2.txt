@@ -1,0 +1,12 @@
+[CODE]
+public class SumDigits {
+    public static int sumDigits(int n) {
+        if (n == 0) {
+            return 0;
+        }
+        return (n % 10) + sumDigits(n / 10);
+    }
+}
+[OUTPUT]
+KM: The base case `n == 0` is never reached for negative inputs, causing infinite recursion and `StackOverflowError`.  
+KH: Add a condition to handle negative numbers (e.g., convert to positive or add a separate base case) to ensure recursion progresses toward termination.  

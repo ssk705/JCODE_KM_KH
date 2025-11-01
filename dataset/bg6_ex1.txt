@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg61 {  
+    public static void main(String[] args) {  
+        String text = null;  
+        if { text != null } {  
+            System.out.println(text.length());  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: The `if` statement incorrectly uses curly braces `{}` to define the condition instead of parentheses `()`, making the code uncompilable.  
+KH: Replace the curly braces `{}` around the condition with parentheses `()` to properly structure the `if` statement.

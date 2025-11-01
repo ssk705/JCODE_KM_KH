@@ -1,0 +1,10 @@
+[CODE]  
+public class AppendTest {  
+    public static void main(String[] args) {  
+        String s = "foo";  
+        s.append("bar");  
+    }  
+}  
+[OUTPUT]  
+KM: The `append()` method is not available for `String` objects; it is used in `StringBuilder` or `StringBuffer`.  
+KH: Use the `+` operator for concatenation or switch to using `StringBuilder`/`StringBuffer` for mutable sequences.  

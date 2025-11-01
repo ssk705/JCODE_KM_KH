@@ -1,0 +1,13 @@
+[CODE]  
+public class PrintArray {  
+    public static void main(String[] args) {  
+        int[] arr = {1, 2, 3, 4, 5};  
+        int i = 0;  
+        while (i < arr.length) {  
+            System.out.println(arr[i]);  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: Using a **while** loop without incrementing the loop variable 'i', causing an infinite loop.  
+KH: Use a **for** loop instead to automatically handle initialization, condition, and increment of the loop variable, ensuring proper iteration over the array.  

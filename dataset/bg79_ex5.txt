@@ -1,0 +1,26 @@
+[CODE]
+interface OnCompleteListener {
+    void onComplete();
+}
+
+class DownloadTask {
+    public void setOnComplete(OnCompleteListener listener) {
+        listener.onComplete();
+    }
+}
+
+class DownloadHandler {
+    public void handleDownload() {
+        System.out.println("Download handled");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        DownloadTask task = new DownloadTask();
+        task.setOnComplete(new DownloadHandler());  
+    }
+}
+[OUTPUT]
+KM:'DownloadHandler` is passed as an `OnCompleteListener` but doesn’t declare `implements OnCompleteListener`.  
+KH:Add `implements OnCompleteListener` to the `DownloadHandler` class to resolve the type mismatch.

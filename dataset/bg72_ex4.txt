@@ -1,0 +1,10 @@
+[CODE]
+public class InitializeArray {
+    public static void main(String[] args) {
+        String data = "CS1";
+        int[] values = new int[data];
+    }
+}
+[OUTPUT]
+KM:Type mismatch: Using a `String` (`data`) as an array size specifier, which requires an `int`.  
+KH:Use `data.length()` to set the array size based on the **string's length**.

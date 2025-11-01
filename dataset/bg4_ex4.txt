@@ -1,0 +1,14 @@
+[CODE]  
+public class Bg44 {  
+    public static void main(String[] args) {  
+        int x = 10;  
+        if (x % 2 == 0); {  
+            System.out.println("Even");  
+        } else {  
+            System.out.println("Odd");  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: A semicolon after the `if` condition breaks the `if-else` structure, causing a syntax error for the unattached `else`.  
+KH: Remove the semicolon after the `if` condition to properly link the `if` and `else` blocks. 

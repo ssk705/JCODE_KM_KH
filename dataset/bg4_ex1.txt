@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg41 {  
+    public static void main(String[] args) {  
+        int x = -1;  
+        if (x > 0); {  
+            System.out.println("Positive");  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: A semicolon is incorrectly placed after the `if` condition, causing the code block to execute unconditionally.  
+KH: Remove the semicolon after the `if` condition to ensure the block executes only when the condition is true.  

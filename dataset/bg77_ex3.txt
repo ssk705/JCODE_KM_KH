@@ -1,0 +1,12 @@
+[CODE]  
+public class TemperatureCheck {  
+    public static void main(String[] args) {  
+        int temp1 = 30;  
+        int temp2 = 40;  
+        double midpoint = (temp1 + temp2) / 2;  
+        System.out.println(midpoint);   
+    }  
+}  
+[OUTPUT]  
+KM: The sum of temp1 and temp2 (70) is divided by 2 using integer division, resulting in 35, which is then stored as 35.0 in midpoint.  
+KH: Use a double literal for the divisor (e.g., 2.0) to force floating-point division.  

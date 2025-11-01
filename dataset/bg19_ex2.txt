@@ -1,0 +1,12 @@
+[CODE]  
+abstract class Vehicle {  
+    abstract void startEngine();  
+}  
+class Car extends Vehicle {  
+    void accelerate() {  
+        System.out.println("Car accelerating");  
+    }  
+}  
+[OUTPUT]  
+KM: The class 'Car' does not override the abstract method 'startEngine()' from 'Vehicle', making it implicitly abstract.  
+KH: Implement the 'startEngine()' method in 'Car' to provide concrete functionality or mark 'Car' as abstract.  

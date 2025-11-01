@@ -1,0 +1,27 @@
+[CODE]
+import java.util.*;
+class Animal {
+    public void eat() {
+        System.out.println("Animal eats");
+    }
+}
+
+class Cat extends Animal {
+    public void meow() {
+        System.out.println("Meow!");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        List<Animal> animals = new ArrayList<>();
+        animals.add(new Cat());
+        
+        for (Animal a : animals) {
+            a.meow();  
+        }
+    }
+}
+[OUTPUT]
+KM:`meow()` is a method specific to `Cat`, not defined in `Animal`.  Polymorphic collections (`List<Animal>`) only guarantee access to `Animal` methods. 
+KH:Use explicit downcasting (e.g., `((Cat) a).meow()`) only if you are certain the object is a `Cat`. Alternatively, redesign using polymorphism (e.g., override `eat()` in `Cat`).

@@ -1,0 +1,12 @@
+[CODE]
+public class Sample {
+    public static int getNumber() {
+        return 42;
+    }
+    public static void main(String[] args) {
+        String numStr = getNumber().toString();  
+    }
+}
+[OUTPUT]
+KM: The method getNumber returns an int, which is a primitive type and does not have a toString() method.
+KH: Either convert the int to an Integer object to call toString(), or use String.valueOf() to convert the primitive to a String.

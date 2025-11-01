@@ -1,0 +1,16 @@
+[CODE]  
+public class Bg12 {  
+    public static void checkString(String input) {  
+        if (input == "secret") {  
+            System.out.println("Correct!");  
+        } else {  
+            System.out.println("Incorrect!");  
+        }  
+    }  
+    public static void main(String[] args) {  
+        checkString(new String("secret"));  
+    }  
+}  
+[OUTPUT]  
+KM: Comparing a method parameter with a string literal using '==' fails because the parameter may not reference the same object as the literal.  
+KH: Use '.equals()' to compare the parameter's value with the literal string (e.g., "secret").  

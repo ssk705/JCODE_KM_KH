@@ -1,0 +1,11 @@
+[CODE]
+public class Example1 {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = a + ++a;
+        System.out.println(b);
+    }
+}
+[OUTPUT]
+KM: Pre-increment (`++a`) immediately updates `a` before the rest of the expression is evaluated. Here, the second `a` uses the updated value (6), not the original (5), leading to `5 + 6 = 11` instead of the expected `5 + 5 = 10` (with increment applied afterward). 
+KH:  If you need the original value of `a` in the entire expression, perform the increment in a separate statement *after* the calculation. Alternatively, use a temporary variable to hold the original value.

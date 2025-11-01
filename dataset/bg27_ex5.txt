@@ -1,0 +1,11 @@
+[CODE]  
+public class Bg275 {  
+    public static void main(String[] args) {  
+        int price = 20;  
+        total = price * 1.08;  
+        System.out.println(total);  
+    }  
+}  
+[OUTPUT]  
+KM: The variable 'total' is not declared before assignment, and its data type is inconsistent (possible double).  
+KH: Declare 'total' with the correct data type (e.g., double) before assigning the calculated value to it.

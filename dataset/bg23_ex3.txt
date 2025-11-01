@@ -1,0 +1,12 @@
+[CODE]  
+public class Calculator {  
+    public static int add(double a, double b) {  
+        return a + b;  
+    }  
+    public static void main(String[] args) {  
+        System.out.println(add(2.5, 3.7));  
+    }  
+}  
+[OUTPUT]  
+KM: The method returns an int, but the result of adding two doubles (a + b) is a double, causing a type mismatch.  
+KH: Change the return type of the add method to double to match the result's data type.  

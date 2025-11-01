@@ -1,0 +1,21 @@
+[CODE]
+public class LinkedList {
+    Node head;
+    class Node {
+        int data;
+        Node next;
+        Node(int d) { data = d; }
+    }
+
+    void printList() {
+        Node current = head;
+        while (current.next != null) {
+            System.out.println(current.data);
+            current = current.next;
+        }
+    }
+    
+}
+[OUTPUT]
+KM:The loop condition `current.next != null` skips the last node. When `current` is the tail node, its `next` is `null`, so the loop exits without printing the tail's data
+KH:Change the loop condition to `current != null` to include all nodes. Move the print statement inside the loop to avoid skipping the tail.

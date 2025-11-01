@@ -1,0 +1,13 @@
+[CODE]  
+public class Bg85 {  
+    public static double area(double radius) {  
+        return Math.PI * radius * radius;  
+    }  
+    public static void main(String[] args) {  
+        int radius = 5;  
+        System.out.println(area());  
+    }  
+}  
+[OUTPUT]  
+KM: The `area` method is called without any arguments, but it requires a `double radius` parameter. This results in a missing argument error.  
+KH: Provide the required argument when calling the method, e.g., `area(radius)`, and ensure the variable is in scope.

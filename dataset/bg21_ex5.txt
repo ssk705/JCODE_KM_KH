@@ -1,0 +1,12 @@
+[CODE]  
+public class Vehicle {  
+    private int speed;  
+}  
+public class Car extends Vehicle {  
+    public void displaySpeed() {  
+        System.out.println(speed);  
+    }  
+}  
+[OUTPUT]  
+KM: The field 'speed' is private in the superclass Vehicle and not accessible in the subclass Car.  
+KH: Declare 'speed' as protected or public in Vehicle, or use a getter method to access it.  

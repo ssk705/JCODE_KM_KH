@@ -1,0 +1,11 @@
+[CODE]
+public class Example2 {
+    public static void main(String[] args) {
+              int a = 10;
+              int b = 20;
+              a + b;
+          }
+      }
+[OUTPUT]
+KM: The expression 'a + b' is not a valid statement because it does not perform an assignment nor a method call. It is an expression without a side effect.
+KH: Either assign the result of the expression to a variable or remove it if it is not needed.

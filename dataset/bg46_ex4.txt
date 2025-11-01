@@ -1,0 +1,11 @@
+[CODE]  
+public class ConditionalError {
+    public static void main(String[] args) {
+        int m = 5;
+        int n = m-- == 5 ? m : 0;
+        System.out.println(n);
+    }
+}
+[OUTPUT]  
+KM:  Post-decrement `m--` compares original `m` (5), making the condition true, but `m` becomes 4 *before* the ternary operator assigns `n = m`. Thus, `n` is assigned 4, not 5.  
+KH:  If you need the original value in the ternary, store it in a temporary variable before decrementing.

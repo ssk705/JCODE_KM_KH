@@ -1,0 +1,11 @@
+[CODE]  
+public class Counter {  
+    int count = 0;  
+    void increment() {  
+        int count = 5;  
+        count++;  
+    }  
+}  
+[OUTPUT]  
+KM: The local variable 'count' shadows the instance variable, so the instance variable is not incremented.  
+KH: Use 'this.count++' to modify the instance variable instead of the local variable.  

@@ -1,0 +1,11 @@
+[CODE]  
+public class Bg493 {  
+    public static void main(String[] args) {  
+        int[] arr = {5};  
+        int sum = arr + 3;  
+        System.out.println(sum);  
+    }  
+}  
+[OUTPUT]  
+KM: The array variable 'arr' is used in an arithmetic operation instead of accessing an element, resulting in an invalid operand type.  
+KH: Access a specific element of the array using an index (e.g., arr[0]) to perform the arithmetic operation.  

@@ -1,0 +1,16 @@
+[CODE]
+public class Animal {
+    String type;
+    public Animal(String t) { type = t; }
+}
+public class Dog extends Animal {
+    public Dog() {
+        Animal("Canine");   
+    }
+    public static void main(String[] args) {
+        Dog d = new Dog();
+    }
+}
+[OUTPUT]
+KM:Trying to call superclass constructor `Animal("Canine")` directly without `super` or `new`.  
+KH:Use `super("Canine")` as the first line in `Dog()` to properly invoke the superclass constructor.

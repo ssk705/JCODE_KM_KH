@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg805 {  
+    public static void main(String[] args) {  
+        String[][] data = {{"a"}, {"bb", "ccc"}};  
+        for (String[] row : data) {  
+            System.out.println(row.length + " " + row[0].length);  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: Correctly using `.length` for the array `row`, but incorrectly using `.length` for `row[0]` (a String).  
+KH: For the String `row[0]`, use `.length()` instead of `.length` to get its length.

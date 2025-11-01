@@ -1,0 +1,16 @@
+[CODE]
+public class Box {
+    int width;
+    public Box(int w) { width = w; }
+
+    static Box createBox() {
+        return Box(10);  
+    }
+    public static void main(String[] args) {
+        Box b = createBox();
+    }
+}
+[OUTPUT]
+KM:Returning `Box(10)` without `new` from a method. Constructors require explicit instantiation.  
+KH:Replace `return Box(10)` with `return new Box(10)` to create a valid object instance.  
+  

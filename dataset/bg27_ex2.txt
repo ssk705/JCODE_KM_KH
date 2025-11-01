@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg272 {  
+    public static void main(String[] args) {  
+        for (i = 0; i < 5; i++) {  
+            System.out.println(i);  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: The loop variable 'i' is not declared with a data type (e.g., int) in the for-loop initialization.  
+KH: Add the correct data type (e.g., int) when declaring 'i' in the for-loop (e.g., for (int i = 0; ...)).  
+

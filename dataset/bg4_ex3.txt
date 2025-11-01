@@ -1,0 +1,13 @@
+[CODE]  
+public class Bg43 {  
+    public static void main(String[] args) {  
+        int count = 0;  
+        while (count < 5); {  
+            System.out.println(count);  
+            count++;  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: A semicolon after the `while` condition creates an infinite loop because the loop body is treated as empty.  
+KH: Remove the semicolon after the `while` condition to attach the code block to the loop.  

@@ -1,0 +1,9 @@
+[CODE]  
+public class Rectangle {  
+    public double calculateArea(length, double width) {  
+        return length * width;  
+    }  
+}  
+[OUTPUT]  
+KM: The parameter 'length' in the method 'calculateArea' lacks a type specification. Each parameter must have its type declared individually.  
+KH: Add the appropriate type (e.g., 'double') before 'length' in the parameter list. 

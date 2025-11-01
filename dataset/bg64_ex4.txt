@@ -1,0 +1,16 @@
+[CODE]  
+public class Book {  
+    String title;  
+    public void Book() {  
+        title = "Default Title";  
+    }  
+    public Book(String title) {  
+        this.title = title;  
+    }  
+    public static void main(String[] args) {  
+        Book b = new Book();  
+    }  
+}  
+[OUTPUT]  
+KM: The no-argument constructor is declared with `void`, so it is treated as a method. The `new Book()` call fails because no valid constructor exists.  
+KH: Remove `void` from the no-argument constructor to resolve the compilation err

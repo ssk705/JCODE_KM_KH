@@ -1,0 +1,15 @@
+[CODE]
+class Employee {}
+class Manager extends Employee {
+    void manage() { System.out.println("Managing..."); }
+}
+public class Main {
+    public static void main(String[] args) {
+        Employee[] team = { new Employee(), new Manager() };
+        Manager boss = (Manager) team[0]; 
+        boss.manage();
+    }
+}
+[OUTPUT]
+KM: The first array element (`team[0]`) is a base `Employee`, not a `Manager`.  Casting it to `Manager` fails at runtime because the object lacks `Manager`-specific traits.  
+KH: Only cast objects that you know are of the target type (e.g., use `team[1]` here).Use `instanceof` to check each element’s type before casting.

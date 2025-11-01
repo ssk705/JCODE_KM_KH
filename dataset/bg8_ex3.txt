@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg83 {  
+    public static double power(double base, int exponent) {  
+        return Math.pow(base, exponent);  
+    }  
+    public static void main(String[] args) {  
+        System.out.println(power(2, 3.5));  
+    }  
+}  
+[OUTPUT]  
+KM: The `power` method is called with `3.5` (a `double`) for the `exponent` parameter, which expects an `int`. This causes a type mismatch error.  
+KH: Ensure the second argument is an integer, e.g., `power(2, 3)`, or modify the method to accept `double` for both parameters if fractional exponents are needed.  

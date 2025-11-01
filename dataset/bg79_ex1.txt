@@ -1,0 +1,24 @@
+ [CODE]
+ interface Playable {
+    void play();
+    void pause();
+}
+
+class MusicPlayer {
+    public void play() {
+        System.out.println("Playing music");
+    }
+    public void pause() {
+        System.out.println("Music paused");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Playable player = new MusicPlayer();
+        player.play();
+    }
+}
+[OUTPUT]
+KM:The `MusicPlayer` class provides implementations for `play()` and `pause()` but lacks the `implements Playable` declaration.  
+KH:Declare `MusicPlayer` as `class MusicPlayer implements Playable` to formally implement the interface.  

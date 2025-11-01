@@ -1,0 +1,22 @@
+[CODE]
+class Animal {
+    public void move() {
+        System.out.println("Animal moves");
+    }
+}
+
+class Bird extends Animal {
+    public void move(String location) {
+        System.out.println("Bird flies to " + location);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myBird = new Bird();
+        myBird.move("tree");  
+    }
+}
+[OUTPUT]
+KM:Reference type `Animal` has no `move(String)` method. Overloading resolution depends on the reference type (`Animal`), not the object type (`Bird`).
+KH:Cast `myBird` to `Bird` to access the subclass method, or ensure the method exists in the reference type.  

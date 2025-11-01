@@ -1,0 +1,16 @@
+[CODE]
+public class Student {
+    private String name;
+
+    public void setName(String n) {
+        name = n;
+    }
+
+    public static void main(String[] args) {
+        setName("Alice");  
+        System.out.println("Name set!");
+    }
+}
+[OUTPUT]
+KM:`setName()` is an instance method but called without any object context in `main()`.  
+KH: Non-static methods must be called on an object reference (e.g., `someStudent.setName(...)`).  

@@ -1,0 +1,12 @@
+[CODE]
+public class Bg471 {
+    public static void main(String[] args) {
+        String text = null;
+        if (text == null | text.isEmpty()) {
+            System.out.println("Invalid string");
+        }
+    }
+}
+[OUTPUT]
+KM:Used bitwise OR (`|`) instead of logical OR (`||`).  Both operands (`text == null` and `text.isEmpty()`) are evaluated unconditionally, causing a `NullPointerException` when `text` is `null`.
+KH:Replace `|` with `||` to short-circuit: skip `text.isEmpty()` if `text == null` is `true`.  

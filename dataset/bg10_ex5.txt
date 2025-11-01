@@ -1,0 +1,14 @@
+[CODE]  
+public class Bg105 {  
+    public static void main(String[] args) {  
+        ObjectCall obj = new ObjectCall();  
+        obj. printMessage();  
+    }  
+    void printMessage() {  
+        System.out.println("Success!");  
+    }  
+    
+}  
+[OUTPUT]  
+KM: The space after "obj." in "obj. printMessage()" is considered bad style.  
+KH: Remove the space between the object reference and the method name to call it as "obj.printMessage()".

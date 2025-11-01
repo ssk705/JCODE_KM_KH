@@ -1,0 +1,14 @@
+[CODE]
+public class ComputeValue {
+    public static void main(String[] args) {
+        int num = calculateValue();  
+    }
+
+    public static double calculateValue() {
+        return 7.8;
+    }
+}
+[OUTPUT]
+KM: The method `calculateValue()` returns a `double`, but the variable `num` is declared as `int`. Java forbids implicit narrowing conversions.  
+KH: Change `num` to `double` to preserve precision, or explicitly cast the result to `int` (e.g., `(int)calculateValue()`).
+ 

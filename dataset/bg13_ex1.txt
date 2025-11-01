@@ -1,0 +1,12 @@
+[CODE]
+public class Robot {
+    String id;
+    public Robot(String id) { this.id = id; }
+
+    public Robot createCopy() {
+        return new Robot(this);  
+    }
+}
+[OUTPUT]
+KM:`new Robot(this)` tries to use a non-existent copy constructor.  
+KH:Declare a copy constructor in `Robot` (e.g., `Robot(Robot r) { this.id = r.id; }`) before using it in `createCopy()`.

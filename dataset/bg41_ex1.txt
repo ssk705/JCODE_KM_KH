@@ -1,0 +1,16 @@
+[CODE]
+import java.util.*;
+class Animal {}
+class Dog extends Animal {
+    void bark() { System.out.println("Woof!"); }
+}
+public class Main {
+    public static void main(String[] args) {
+        List<Animal> animals = new ArrayList<>();
+        animals.add(new Dog());
+        animals.get(0).bark();   
+    }
+}
+[OUTPUT]
+KM:The collection `animals` is declared as `List<Animal>`, meaning Java treats all elements as `Animal` references at compile time.  
+KH: Cast the retrieved object to `Dog` before calling `bark()`, ensuring the cast is safe (e.g., using `instanceof` checks).  

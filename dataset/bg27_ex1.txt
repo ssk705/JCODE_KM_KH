@@ -1,0 +1,11 @@
+[CODE]  
+public class Bg271 {  
+    public static void main(String[] args) {  
+        int a = 5;  
+        sum = a + 10;  
+        System.out.println(sum);  
+    }  
+}  
+[OUTPUT]  
+KM: The variable 'sum' is used without being declared, leading to a compilation error.  
+KH: Declare 'sum' with a data type (e.g., int) before assigning a value to it.  

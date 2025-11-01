@@ -1,0 +1,10 @@
+[CODE]  
+public class Bg575 {  
+    public static void main(String[] args) { }  
+    if (true) {  
+        System.out.println("This is always true");  
+    }  
+}  
+[OUTPUT]  
+KM: The `if` statement is placed directly in the class body, not inside a method, resulting in a compilation error.  
+KH: Place the `if` block inside a method, such as `main`, to ensure it is part of executable code.

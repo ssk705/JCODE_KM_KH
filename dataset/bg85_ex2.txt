@@ -1,0 +1,14 @@
+[CODE]
+class LinkedList {
+    Node head;
+    void printList() {
+        Node current = head;
+        while (current != null) {
+            System.out.println(current.data);
+            current.next = current; 
+        }
+    }
+}
+[OUTPUT]
+KM: `current.next = current` creates an infinite loop by pointing each node to itself.  
+KH: Traverse correctly by updating `current` to `current.next` (e.g., `current = current.next`).

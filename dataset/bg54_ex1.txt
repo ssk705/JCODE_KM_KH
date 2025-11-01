@@ -1,0 +1,12 @@
+[CODE]
+public class Calculation {
+    public static void main(String[] args) {
+        int length = 5;
+        int width = 4;
+        int perimeter = length + width * 2;
+        System.out.println("Perimeter: " + perimeter);
+    }
+}
+[OUTPUT]
+KM:The `*` operator has higher precedence than `+`, causing `width * 2` to be calculated first, then added to `length`.  
+KH:Use parentheses to enforce intended order: `(length + width) * 2` for the perimeter of a rectangle. 

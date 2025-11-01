@@ -1,0 +1,10 @@
+[CODE]  
+public class Message {
+    public static void main(String[] args) {
+        String text = "Hello /* This is not a comment */ World";
+        System.out.println(text);
+    }
+} 
+[OUTPUT]  
+KM: Text inside a string literal (`"..."`) is not treated as code. Here, `/* ... */` is part of the string, not a comment, leading to unexpected output.   
+KH: Ensure comments are only placed outside strings. To add documentation, place comments before/after the string declaration.  

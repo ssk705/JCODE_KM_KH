@@ -1,0 +1,14 @@
+[CODE]  
+public class Car {  
+    String model;  
+    public void Car(String model) {  
+        this.model = model;  
+    }  
+    public static void main(String[] args) {  
+        Car myCar = new Car("Sedan");  
+        System.out.println(myCar.model);  
+    }  
+}  
+[OUTPUT]  
+KM: Declaring the constructor with `void` prevents proper object initialization, causing the `model` field to remain uninitialized (null).  
+KH: Remove `void` from the constructor to ensure the field is assigned correctly when the object is created.  

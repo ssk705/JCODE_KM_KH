@@ -1,0 +1,14 @@
+[CODE]  
+public class Bg784 {  
+    public static void main(String[] args) {  
+        int[][] matrix = new int[3][3];  
+        for (int i = 0; i <= matrix.length; i++) {  
+            for (int j = 0; j <= matrix[i].length; j++) {  
+                matrix[i][j] = i + j;  
+            }  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: Both outer and inner loops use `<=` instead of `<`, leading to attempts to access `matrix[3]` (invalid) and `matrix[i][3]` (invalid) due to zero-based indexing.  
+KH: Replace `<= matrix.length` with `< matrix.length` and `<= matrix[i].length` with `< matrix[i].length` in the loop conditions.  

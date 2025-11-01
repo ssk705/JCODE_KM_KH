@@ -1,0 +1,13 @@
+[CODE]
+public class Calculator {
+    public static int sum(int a, int b) {
+        return a + b;
+    }
+    public static void main(String[] args) {
+        String result = sum(5, 10);
+        System.out.println(result);
+    }
+}
+[OUTPUT]
+KM: The method 'sum' is declared to return an int, but the result is assigned to a String variable, causing a type mismatch. 
+KH: Change the variable 'result' to be of type int or modify the method's return type to String if a different type is intended.

@@ -1,0 +1,7 @@
+[CODE]  
+public class Test {  
+    public static void main(String[] args);  
+}  
+[OUTPUT]  
+KM: The main method is declared without a method body, using a semicolon instead of curly braces.  
+KH: Add curly braces {} after the method declaration to define the method body.  

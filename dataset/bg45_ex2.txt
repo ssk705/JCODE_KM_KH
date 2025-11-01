@@ -1,0 +1,11 @@
+[CODE]  
+public class ListExample {  
+    public static void main(String[] args) {  
+        ArrayList<String> list = new ArrayList<>();  
+        list.add("Hello");  
+        System.out.println(list);  
+    }  
+}  
+[OUTPUT]  
+KM: The ArrayList class from the java.util package is referenced without an import statement, causing a compilation error.  
+KH: Include the import statement import java.util.ArrayList; or use the fully qualified name java.util.ArrayList in the declaration.  

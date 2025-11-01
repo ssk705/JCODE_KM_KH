@@ -1,0 +1,10 @@
+[CODE]  
+public class Bg284 {  
+    public static void main(String[] args) {  
+        int[] arr = {1, 2, 3}  
+        System.out.println(arr.length);  
+    }  
+}  
+[OUTPUT]  
+KM: Missing semicolon after the array initialization 'int[] arr = {1, 2, 3}'.  
+KH: Place a semicolon after the closing curly brace of the array initializer.  

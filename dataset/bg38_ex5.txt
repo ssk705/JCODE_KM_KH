@@ -1,0 +1,16 @@
+[CODE]
+class Account {
+    private double balance = 100.0;
+    public void updateBalance() {
+        balance -= 10;  
+    }
+}
+
+public class Bank {
+    public void deduct(Account a) {
+        a.balance -= 20;  
+    }
+}
+[OUTPUT]
+KM:`balance` is `private` and accessible **only within `Account`**. External classes like `Bank` cannot access it directly.  
+KH:Encapsulate access via a public method in `Account` (e.g., `public void deductBalance(double amount)`).

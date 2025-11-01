@@ -1,0 +1,20 @@
+[CODE]
+interface Drawable {
+    void draw();
+}
+
+class Circle {
+    public void draw() {
+        System.out.println("Drawing circle");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Drawable d = new Circle();
+        d.draw();
+    }
+}
+[OUTPUT]
+KM:The `Circle` class defines the `draw()` method but does not explicitly declare that it implements the `Drawable` interface.  
+KH:Add `implements Drawable` to the `Circle` class declaration to fulfill the interface contract.  

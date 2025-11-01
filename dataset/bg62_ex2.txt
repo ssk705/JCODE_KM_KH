@@ -1,0 +1,15 @@
+[CODE]  
+import java.util.ArrayList;  
+import java.util.List;  
+
+public class Bg622 {  
+    public static void main(String[] args) {  
+        List<Integer> list1 = new ArrayList<>();  
+        List<Integer> list2 = new ArrayList<>(List.of(5, 6));  
+        list1.add(list2);  
+        System.out.println(list1);  
+    }  
+}  
+[OUTPUT]  
+KM: Adding the entire collection 'list2' as a single element to 'list1' using add(), resulting in a nested list instead of merged elements.  
+KH: Use list1.addAll(list2) to add all elements of 'list2' to 'list1', or iterate through 'list2' to add elements individually.  

@@ -1,0 +1,14 @@
+[CODE]
+public class Bg472 {
+    public static void main(String[] args) {
+        int count = 0;
+        boolean flag = false;
+        if (flag & (count++ < 5)) {
+            System.out.println("Inside if");
+        }
+        System.out.println("Count: " + count);
+    }
+} 
+[OUTPUT]
+KM:The increment (`count++`) executes even when `flag` is `false`, causing an unintended side effect.  .  
+KH:Replace `&` with `&&` to avoid evaluating `count++ < 5` when `flag` is `false`.  

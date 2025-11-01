@@ -1,0 +1,10 @@
+[CODE]  
+public class MathOperation {  
+    public static void main(String[] args) {  
+        double root = sqrt(16);  
+        System.out.println(root);  
+    }  
+}  
+[OUTPUT]  
+KM: The method "sqrt" is not defined in the current class, and the Math class method is not properly referenced.  
+KH: Use "Math.sqrt()" to call the static method from the Math class.

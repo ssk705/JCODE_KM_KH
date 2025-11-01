@@ -1,0 +1,9 @@
+[CODE]  
+public class Student {  
+    public Student(name, int age) {  
+          
+    }  
+}  
+[OUTPUT]  
+KM: The parameter 'name' in the constructor does not have a type specified. All parameters must declare their types explicitly.  
+KH: Specify the type (e.g., 'String') for the parameter 'name' in the constructor declaration.  

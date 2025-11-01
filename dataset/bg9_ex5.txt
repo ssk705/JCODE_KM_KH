@@ -1,0 +1,15 @@
+[CODE]  
+public class Bg95 {  
+    public void makeSound(); {  
+        System.out.println("Generic sound");  
+    }  
+}  
+class Dog extends Animal {  
+    @Override  
+    public void makeSound(); {  
+        System.out.println("Bark");  
+    }  
+}  
+[OUTPUT]  
+KM: The semicolons after both `makeSound();` method headers in the parent and child classes disconnect their bodies from the method declarations.  
+KH: Remove the semicolons after the method headers in both classes to ensure the method bodies are properly defined.

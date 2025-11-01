@@ -1,0 +1,13 @@
+[CODE]  
+public class Bg165 {  
+    public static int divide(int a, int b) {  
+        try {  
+            return a / b;  
+        } catch (ArithmeticException e) {  
+            System.out.println("Division by zero!");  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: If an ArithmeticException is caught (e.g., division by zero), the catch block does not return a value, causing the method to exit without returning an int.  
+KH: Add a return statement in the catch block (e.g., return 0;) or after the try-catch block to handle the error case.

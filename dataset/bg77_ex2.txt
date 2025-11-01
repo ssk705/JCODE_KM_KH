@@ -1,0 +1,12 @@
+[CODE]  
+public class Percentage {  
+    public static void main(String[] args) {  
+        int correctAnswers = 15;  
+        int totalQuestions = 20;  
+        double percentage = (correctAnswers / totalQuestions) * 100;  
+        System.out.println(percentage);  
+    }  
+}  
+[OUTPUT]  
+KM: Integer division of correctAnswers by totalQuestions (15/20) results in 0, which is then multiplied by 100, yielding 0.0.  
+KH: Convert one operand to double (e.g., correctAnswers * 1.0 / totalQuestions) to perform floating-point division.  

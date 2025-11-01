@@ -1,0 +1,9 @@
+[CODE]
+pulic class HelloWorld {
+    pulic static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+[OUTPUT]
+KM:The keyword `public` is misspelled as `pulic` in the class and method declaration
+KH:Correct the spelling to `public` for both the class and method.  

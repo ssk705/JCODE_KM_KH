@@ -1,0 +1,9 @@
+[CODE]
+public class Example2 {
+    public static void main(String[] args) {
+        System.out.println("Hello World"):
+    }
+}
+[OUTPUT]
+KM:The method call `System.out.println(...)` uses a colon `:` instead of a semicolon `;` at the end, resulting in a syntax error.  
+KH:Change the colon `:` to a semicolon `;` to correctly end the statement.  

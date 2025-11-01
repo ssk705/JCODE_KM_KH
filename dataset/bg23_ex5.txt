@@ -1,0 +1,10 @@
+[CODE]  
+public class ArrayExample {  
+    public static void main(String[] args) {  
+        int[] numbers = {10, 20, 30.5, 40};  
+        System.out.println(numbers[2]);  
+    }  
+}  
+[OUTPUT]  
+KM: The value 30.5 is a double, which cannot be stored in an int array, causing a type mismatch during array initialization.  
+KH: Declare the array as double[] numbers or replace 30.5 with an integer value (e.g., 30).

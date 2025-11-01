@@ -1,0 +1,9 @@
+[CODE]  
+public class Bg574 {  
+    public static void main(String[] args) { }  
+    calculateSum(2, 3);  
+    static int calculateSum(int a, int b) { return a + b; }  
+}  
+[OUTPUT]  
+KM: The method call `calculateSum(2, 3);` is outside any method or initializer block, which is not allowed.  
+KH: Move the method call into the `main` method or another method to ensure it is executed within a valid scope.  

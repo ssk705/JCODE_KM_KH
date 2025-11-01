@@ -1,0 +1,11 @@
+[CODE]
+public class Book {
+    public Book(String title) { }
+    public Book(String title, String author, int pages) { }
+    public static void main(String[] args) {
+        Book myBook = new Book("Java 101", "John Doe");
+    }
+}
+[OUTPUT]
+KM: The constructor Book(String, String) is undefined. The class has constructors with one parameter (String) or three parameters (String, String, int), but two arguments are provided.  
+KH: Adjust the number of arguments to match one of the defined constructors: either one String (title) or three parameters (title, author, pages).

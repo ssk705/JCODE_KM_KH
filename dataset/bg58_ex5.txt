@@ -1,0 +1,11 @@
+[CODE]
+public class LoopTest {
+    public static void main(String[] args) {
+        for (int i = 0; i < 5; i++) /*
+            System.out.println(i);
+        */
+    }
+}
+[OUTPUT]
+KM: Placing `/*` and `*/` around the loop body comments out the entire body. This leaves the loop with an empty body, causing a syntax error (missing semicolon after `for`).  
+KH: Move the comment inside the loop body or use single-line comments (`//`) for partial-line explanations.  

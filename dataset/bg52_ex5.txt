@@ -1,0 +1,11 @@
+[CODE]
+public class Rectangle {
+    public Rectangle(int width, int height) { }
+    public Rectangle(int side) { }
+    public static void main(String[] args) {
+        Rectangle r = new Rectangle(10, 20, 30);
+    }
+}
+[OUTPUT]
+KM: The constructor Rectangle(int, int, int) is undefined. The class has constructors with one or two parameters, but three arguments are provided.  
+KH: Use either one argument (for side) or two arguments (for width and height) when creating the Rectangle object.

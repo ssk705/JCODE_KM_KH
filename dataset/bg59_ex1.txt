@@ -1,0 +1,10 @@
+[CODE]  
+public class Test {  
+    public static void main(String[] args) {  
+        public int count = 0;  
+        System.out.println(count);  
+    }  
+}  
+[OUTPUT]  
+KM: The local variable 'count' is declared with the illegal modifier 'public', which is not allowed for local variables.  
+KH: Remove the 'public' modifier from the declaration of 'count' to resolve the error.  

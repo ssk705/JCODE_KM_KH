@@ -1,0 +1,12 @@
+[CODE]
+public class Greeting {
+ 
+   public static void main(String[] args) {
+        {
+            System.out.println("Hello");
+        }
+      
+}
+[OUTPUT]
+KM:The class `Greeting ` is missing a closing curly brace at the end. The last curly brace closes the `main` method, but the class body remains unclosed.  
+KH:Add a closing curly brace `}` at the very end of the file after the `main` method to terminate the class definition.  

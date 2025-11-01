@@ -1,0 +1,12 @@
+[CODE]  
+public class Calculator {  
+    public static int add(int a; int b) {  
+        return a + b;  
+    }  
+    public static void main(String[] args) {  
+        System.out.println(add(5, 3));  
+    }  
+}  
+[OUTPUT]  
+KM: Semicolon ';' used instead of a comma ',' to separate parameters in the method declaration of `add`, causing a syntax error.  
+KH: Replace the semicolons with commas in the method parameter list to properly separate parameters.  

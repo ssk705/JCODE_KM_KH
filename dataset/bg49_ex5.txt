@@ -1,0 +1,11 @@
+[CODE]  
+public class Bg495 {  
+    public static void main(String[] args) {  
+        int[] arr = {0};  
+        arr++;  
+        System.out.println(arr[0]);  
+    }  
+}  
+[OUTPUT]  
+KM: The array variable 'arr' is incremented instead of an element, which is invalid for array types.  
+KH: Increment a specific element of the array using an index (e.g., arr[0]++).

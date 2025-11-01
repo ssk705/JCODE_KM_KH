@@ -1,0 +1,11 @@
+[CODE]  
+public class Bg155 {  
+    static int calculateSum() { return 10 + 15; }  
+    public static void main(String[] args) {  
+        int total = calculateSum + 20;  
+        System.out.println(total);  
+    }  
+}  
+[OUTPUT]  
+KM: 'calculateSum' is a method and must be called with parentheses '()' to use its return value in the expression.  
+KH: Append '()' after 'calculateSum' to execute the method and add its result to 20.

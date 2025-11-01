@@ -1,0 +1,13 @@
+[CODE]
+public class Student {
+    String name;
+    public Student(String n) { name = n; }
+
+    public static void main(String[] args) {
+        Student s1 = new Student("Alice");
+        Student s2 = new Student(s1);  
+    }
+}
+[OUTPUT]
+KM:Attempt to call a copy constructor `new Student(s1)` without defining one. Java doesn't auto-generate copy constructors.  
+KH:Define a copy constructor like `Student(Student other) { this.name = other.name; }` before using it.

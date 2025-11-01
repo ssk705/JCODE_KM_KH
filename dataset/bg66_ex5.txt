@@ -1,0 +1,12 @@
+[CODE]  
+public class Geometry {  
+    public static double calculateArea(double radius; int sides) {  
+        return (sides == 0) ? Math.PI * radius * radius : 0.5 * sides * radius * radius;  
+    }  
+    public static void main(String[] args) {  
+        System.out.println(calculateArea(5.0, 6));  
+    }  
+}  
+[OUTPUT]  
+KM: Mixing parameter types in `calculateArea` method uses a semicolon ';' instead of a comma ',' to separate `radius` and `sides`.  
+KH: Replace the semicolon with a comma between parameters in the method declaration.

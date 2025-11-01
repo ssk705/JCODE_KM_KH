@@ -1,0 +1,13 @@
+[CODE]
+public class Test {
+    public static void main(String[] args) {
+        printMessage();
+    }
+}
+
+public void printMessage() {
+    System.out.println("Message");
+}
+[OUTPUT]
+KM:The method `printMessage()` is defined outside any class, violating Java's structure.   
+KH:Move `printMessage()` inside the `Test` class or another class.  

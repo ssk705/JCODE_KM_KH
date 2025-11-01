@@ -1,0 +1,12 @@
+[CODE]
+public class Base { Base() {} }
+class Derived extends Base {
+    Derived() {
+        initialize();
+        super();
+    }
+    void initialize() {}
+}
+[OUTPUT]
+KM: The method `initialize()` is called before `super()`, which is invalid because the parent class must be initialized before any methods are called.  
+KH: Ensure `super()` is the first statement in the constructor. Move the method call after `super()`.

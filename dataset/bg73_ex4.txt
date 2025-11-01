@@ -1,0 +1,13 @@
+[CODE]  
+public class LoopExample4 {  
+    public static void main(String[] args) {  
+        int sum = 0;  
+        for (int i = 1; i == 10; i++) {  
+            sum += i;  
+        }  
+        System.out.println(sum);  
+    }  
+}  
+[OUTPUT]  
+KM: The loop condition `i == 10` is false initially, so the loop body never executes.  
+KH: Change the loop condition to `i <= 10` to iterate from 1 to 10 and accumulate the sum.  

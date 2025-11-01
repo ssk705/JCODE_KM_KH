@@ -1,0 +1,9 @@
+[CODE]  
+public class Bg72 {  
+    public void void() {  
+        System.out.println("This method does nothing.");  
+    }  
+}  
+[OUTPUT]  
+KM: Using the keyword 'void' as a method name, which is not allowed because 'void' is a reserved keyword for method return types.  
+KH: Rename the method to a valid identifier, like 'doNothing' or 'emptyMethod'.  

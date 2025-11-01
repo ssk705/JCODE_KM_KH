@@ -1,0 +1,13 @@
+[CODE]  
+import java.util.*;  
+public class Bg702 {  
+    public static void main(String[] args) {  
+        Map map = new HashMap();  
+        map.put("key", 123);  
+        int value = map.get("key");  
+        System.out.println(value);  
+    }  
+}  
+[OUTPUT]  
+KM: Retrieving a value from a raw `HashMap` returns `Object`, which cannot be directly assigned to an `int` variable. Autoboxing/unboxing does not apply here due to type erasure.  
+KH: Cast the result to `Integer` first (e.g., `(Integer) map.get("key")`) or use generics like `Map<String, Integer>` to ensure type correctness.  

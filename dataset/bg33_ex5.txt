@@ -1,0 +1,12 @@
+[CODE]  
+import java.io.FileWriter;
+public class Bg335 {  
+    public static void main(String[] args) {  
+        FileWriter writer = new FileWriter("output.txt");  
+        writer.write("Hello");  
+        writer.close();  
+    }  
+}  
+[OUTPUT]  
+KM: FileWriter operations can throw IOException, a checked exception, which is not handled or declared.  
+KH: Use a try-catch block to handle IOException or declare 'throws IOException' in the main method.

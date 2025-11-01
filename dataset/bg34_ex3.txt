@@ -1,0 +1,10 @@
+[CODE]
+public class MissingSemicolon3 {
+    public static void main(String[] args) {
+        for (int i = 0; i < 3; i++):
+            System.out.println(i);
+    }
+}
+[OUTPUT]
+KM:The `for` loop header ends with a colon `:` instead of the required semicolon `;` after `i++`, making the syntax invalid.  
+KH:Replace the colon `:` with a semicolon `;` directly after `i++` to define the loop correctly.

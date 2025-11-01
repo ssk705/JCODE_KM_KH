@@ -1,0 +1,13 @@
+[CODE]  
+import java.util.Scanner;  
+public class Bg154 {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+        if (scanner.nextInt < 5) {  
+            System.out.println("Input is less than 5");  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: 'nextInt' is a method and requires parentheses '()' to read user input as an integer.  
+KH: Add parentheses after 'nextInt' to call the method and compare the input value.  

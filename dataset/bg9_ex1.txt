@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg91 {  
+    public static void greet(); {  
+        System.out.println("Hello!");  
+    }  
+    public static void main(String[] args) {  
+        greet();  
+    }  
+}  
+[OUTPUT]  
+KM: A semicolon is incorrectly placed after the method header `greet();`, causing the method body to be treated as a separate block.  
+KH: Remove the semicolon after the method header to properly associate the body with the method declaration.  

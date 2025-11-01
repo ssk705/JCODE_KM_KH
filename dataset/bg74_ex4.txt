@@ -1,0 +1,13 @@
+[CODE]  
+public class PrintReverse {  
+    public static void main(String[] args) {  
+        int[] arr = {1, 2, 3, 4, 5};  
+        int i = arr.length - 1;  
+        while (i >= 0)  
+            System.out.println(arr[i]);  
+            i--;  
+    }  
+}  
+[OUTPUT]  
+KM: Missing braces in the while loop cause the decrement (`i--`) to execute only once, leading to an infinite loop.  
+KH: Add braces to include both the print statement and `i--` in the loop body, or use a for loop to manage the index automatically.  

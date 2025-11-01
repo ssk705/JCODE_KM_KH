@@ -1,0 +1,9 @@
+[CODE]  
+public class ObjectCreation {  
+    public static void main(String[] args) {  
+        Object obj = newObject();  
+    }  
+}  
+[OUTPUT]  
+KM: Missing space after 'new' while creating an Object instance. 'newObject' is not a valid class name.  
+KH: Separate 'new' and 'Object' with a space to resolve the syntax error.  

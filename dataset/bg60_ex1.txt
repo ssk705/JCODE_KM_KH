@@ -1,0 +1,13 @@
+[CODE]  
+import java.util.ArrayList;  
+public class ListUpdate {  
+    public static void main(String[] args) {  
+        ArrayList<Integer> nums = new ArrayList<>();  
+        nums.add(1);  
+        nums.add(2);  
+        nums.get(0) = 10;  
+    }  
+}  
+[OUTPUT]  
+KM: Directly assigning a value to the result of `get()` is invalid because `get()` returns a value, not a variable that can be assigned.  
+KH: Use the `set(index, value)` method of the list to replace the element at the specified index.  

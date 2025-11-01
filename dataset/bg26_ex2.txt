@@ -1,0 +1,12 @@
+[CODE]  
+public class CaseSensitive {  
+    public static void main(String[] args) {  
+        printvalue("Hello");  
+    }  
+    public static void printValue(String msg) {  
+        System.out.println(msg);  
+    }  
+}  
+[OUTPUT]  
+KM: The method "printvalue" is called with incorrect casing, while the actual method is named "printValue". Java is case-sensitive.  
+KH: Use the exact same casing as the method definition when calling it (e.g., "printValue").  

@@ -1,0 +1,13 @@
+[CODE]
+public class Checker {
+    public static boolean isEven(int num) {
+        return num % 2 == 0;
+    }
+    public static void main(String[] args) {
+        int value = isEven(4) + 5;
+        System.out.println(value);
+    }
+}
+[OUTPUT]
+KM: The method 'isEven' returns a boolean, which cannot be used in arithmetic operations expecting an int.
+KH: Modify the code to use the boolean result appropriately, such as in a conditional statement, or change the method to return an int (e.g., 1 for true, 0 for false).

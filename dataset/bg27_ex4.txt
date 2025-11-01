@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg274 {  
+    public static void main(String[] args) {  
+        if (true) {  
+            int value = 10;  
+        }  
+        System.out.println(value);  
+    }  
+}  
+[OUTPUT]  
+KM: The variable 'value' is declared inside the if-block and cannot be accessed outside due to scope limitations.  
+KH: Declare 'value' outside the if-block to ensure it is accessible in the broader scope where it is used. 

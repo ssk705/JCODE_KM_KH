@@ -1,0 +1,13 @@
+[CODE]
+public class Animal {
+    Animal() {}
+}
+class Dog extends Animal {
+    Dog() {
+        System.out.println("Dog created");
+        super();
+    }
+}
+[OUTPUT]
+KM: The `System.out.println` statement precedes the `super()` call, violating the rule that `super` must be the first statement in a constructor.  
+KH: Reorder the statements so that `super()` is the first line in the constructor, followed by other statements.

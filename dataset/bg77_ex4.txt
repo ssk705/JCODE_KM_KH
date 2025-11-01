@@ -1,0 +1,12 @@
+[CODE]  
+public class Recipe {  
+    public static void main(String[] args) {  
+        int flour = 500;  
+        int portions = 3;  
+        double flourPerPortion = flour / portions;  
+        System.out.println(flourPerPortion);  
+    }  
+}  
+[OUTPUT]  
+KM: Dividing two integers (500/3) results in 166 due to integer division, which is then cast to 166.0.  
+KH: Cast one variable to double (e.g., (double)flour / portions) to retain decimal precision.  

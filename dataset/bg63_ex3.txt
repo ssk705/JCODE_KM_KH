@@ -1,0 +1,14 @@
+[CODE]  
+public class Rectangle {{  
+    int width, height;  
+    public Rectangle(int w, int h) {{  
+        width = w;  
+        height = h;  
+    }}  
+    public static void main(String[] args) {{  
+        Rectangle rect = new rect(4, 5);  
+    }}  
+}}  
+[OUTPUT]  
+KM: The constructor is incorrectly called with the variable name 'rect' instead of the class name 'Rectangle'.  
+KH: Correct the constructor call by using 'Rectangle' to create the instance. 

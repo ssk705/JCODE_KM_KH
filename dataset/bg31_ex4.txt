@@ -1,0 +1,17 @@
+[CODE]
+public class BookShelf {
+    public static void main(String[] args) {
+        Book[] books = new Book[5];
+        for (Book b : books) {
+            b = new Book(); 
+        }
+        books[0].setTitle("Java 101"); 
+    }
+}
+class Book {
+    String title;
+    void setTitle(String t) { title = t; }
+}
+[OUTPUT]
+KM:The loop reassigns the loop variable `b` instead of modifying the array elements.The array elements remain `null`, causing a `NullPointerException` at `books[0].setTitle()`.  
+KH:Use a traditional `for` loop to assign `new Book()` to each array index directly (e.g., `books[i] = new Book()`).

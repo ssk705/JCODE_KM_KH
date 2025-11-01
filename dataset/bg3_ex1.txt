@@ -1,0 +1,9 @@
+[CODE]  
+public class Bg31 {  
+    public static void main(String[] args) {  
+        System.out.println('Hello World');  
+    }  
+}  
+[OUTPUT]  
+KM: Using single quotes ' ' for a String literal instead of double quotes " ".  
+KH: Replace the single quotes with double quotes around the String literal.  

@@ -1,0 +1,14 @@
+[CODE]
+public class Book {
+    String title;
+    public Book(String t) { title = t; }
+
+    public static void main(String[] args) {
+        Book[] library = new Book[2];
+        library[0] = Book("Java 101");   
+        library[1] = new Book("Python 101");
+    }
+}
+[OUTPUT]
+KM:Assigning `Book("Java 101")` to an array element without `new`. Array elements must hold object references.  
+KH:Use `new Book("Java 101")` to instantiate the object before storing it in the array.  

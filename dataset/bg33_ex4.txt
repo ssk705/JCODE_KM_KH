@@ -1,0 +1,11 @@
+[CODE]  
+import java.net.URL;
+public class Bg334 {
+    public static void main(String[] args) {
+        URL url = new URL("https://example.com");
+        System.out.println(url.getProtocol());
+    }
+}
+[OUTPUT]  
+KM: URL` constructor throws `MalformedURLException`, a checked exception that must be handled.  
+KH: Handle `MalformedURLException` with `try-catch` or declare `throws MalformedURLException` in `main.`    

@@ -1,0 +1,15 @@
+[CODE]  
+public class Car {  
+    String model;  
+    public Car(String m) { model = m; }  
+    public String ToString() { return model; }  
+    public void printInfo() {  
+        System.out.println("Model: " + ToString());  
+    }  
+    public static void main(String[] args) {  
+        new Car("Sedan").printInfo();  
+    }  
+}  
+[OUTPUT]  
+KM: The custom `ToString` method is defined and called with uppercase 'T' and 'S', which does not override `Object.toString()` and leads to unexpected behavior.  
+KH: Rename the method to `toString` (lowercase 't', uppercase 'S') and call `toString()` without capitalization to use the standard method.

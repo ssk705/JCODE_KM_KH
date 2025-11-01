@@ -1,0 +1,17 @@
+
+[CODE]  
+import java.util.*;  
+public class Bg703 {  
+    public static void main(String[] args) {  
+        LinkedList list = new LinkedList();  
+        list.add(5);  
+        list.add("five");  
+        int sum = 0;  
+        for (Object item : list) {  
+            sum += (int) item;  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: Mixing types in a raw `LinkedList` leads to a runtime `ClassCastException` when casting `"five"` (a `String`) to `int`. Raw collections bypass compile-time type checks.  
+KH: Use generics (e.g., `LinkedList<Integer>`) to enforce homogeneous elements or validate types before casting (e.g., `if (item instanceof Integer)`).  

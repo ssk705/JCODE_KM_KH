@@ -1,0 +1,12 @@
+[CODE]
+public class Bg173 {
+    public static void main(String[] args) {
+        int[] arr1 = {1, 2, 3};
+        int[] arr2 = arr1;
+        arr2[0] = 100;
+        System.out.println(arr1[0]);  
+    }
+}
+[OUTPUT]
+KM:Assigning `arr2 = arr1` copies the reference, not the array. Both variables point to the same array in memory.  
+KH:Create a new array and copy elements (e.g., `arr2 = Arrays.copyOf(arr1, arr1.length)`).  

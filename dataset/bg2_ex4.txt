@@ -1,0 +1,9 @@
+[CODE]
+public class Bg24 {
+    public static boolean isZero(int num) {
+        return num = 0;
+    }
+}
+[OUTPUT]
+KM: Using '=' instead of '==' in the return statement attempts to assign 0 to num, which is invalid in a boolean context and causes a compilation error.
+KH: Use '==' to compare num with 0. The method should return the result of the equality check.

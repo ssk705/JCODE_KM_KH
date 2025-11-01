@@ -1,0 +1,12 @@
+[CODE]  
+import java.util.HashMap;  
+public class Main {  
+    public static void main(String[] args) {  
+        HashMap<String, Integer> map = new HashMap<>();  
+        map.put("a", 1);  
+        map.get("a") = 2;  
+    }  
+}  
+[OUTPUT]  
+KM: Assigning a new value directly to 'map.get("a")' is invalid because 'get()' returns a value, not a variable.  
+KH: Use 'map.put("a", 2)' to update the value

@@ -1,0 +1,13 @@
+[CODE]
+public class Point {
+    int x, y;
+    public Point(int a, int b) { x = a; y = b; }
+
+    public static void main(String[] args) {
+        Point p1 = new Point(3, 4);
+        Point p2 = new Point(p1);  
+    }
+}
+[OUTPUT]
+KM:`new Point(p1)` requires a copy constructor accepting a `Point` argument, which isn't defined.  
+KH: Add a copy constructor: `public Point(Point p) { this.x = p.x; this.y = p.y; }`.

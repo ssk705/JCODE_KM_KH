@@ -1,0 +1,9 @@
+[CODE]  
+public class Bg74 {  
+    public static boolean new() {  
+        return true;  
+    }  
+}  
+[OUTPUT]  
+KM: Using the keyword 'new' as a method name, which is invalid because 'new' is a reserved keyword for object instantiation.  
+KH: Rename the method to a valid identifier, such as 'isNew' or 'createNew'.  

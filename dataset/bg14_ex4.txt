@@ -1,0 +1,13 @@
+[CODE]  
+public class Greeting {  
+    public static String generateGreeting(String name) {  
+        String message = "Hello, " + name;  
+    }  
+    public static void main(String[] args) {  
+        String greeting = generateGreeting("Alice");  
+        System.out.println(greeting);  
+    }  
+}  
+[OUTPUT]  
+KM: The method `generateGreeting` constructs a `message` but does not return it, resulting in an error when trying to store the result in `greeting`.
+KH: add a return statement to generateGreeting

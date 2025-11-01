@@ -1,0 +1,8 @@
+[CODE]
+import java.util.*;
+public class Test {
+    List<String> = new ArrayList<>();
+}
+[OUTPUT]
+KM: The variable declaration `List<String> = ...` lacks an identifier between `>` and `=`.  
+KH: Add a variable name after `List<String>` (e.g., `List<String> names = new ArrayList<>();`). 

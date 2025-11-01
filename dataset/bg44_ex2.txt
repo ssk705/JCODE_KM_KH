@@ -1,0 +1,10 @@
+[CODE]
+public class Example3 {
+    public static void main(String[] args) {
+        int result;
+        5 + 3 * 2;
+    }
+} 
+[OUTPUT]
+KM: Arithmetic expressions like `5 + 3 * 2;` are not complete statements.  
+KH: Assign the result to a variable (e.g., `result = 5 + 3 * 2;`) or pass it directly to a method (e.g., `print(...)`).

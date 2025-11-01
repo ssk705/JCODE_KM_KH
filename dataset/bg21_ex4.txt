@@ -1,0 +1,10 @@
+[CODE]  
+public class Circle {  
+    double radius;  
+    public void setRadius(double radius) {  
+        radius = radius;  
+    }  
+}  
+[OUTPUT]  
+KM: The parameter 'radius' shadows the instance field 'radius', causing the assignment to refer to the parameter itself instead of the field.  
+KH: Use 'this.radius' to explicitly reference the instance field in the assignment statement.  

@@ -1,0 +1,12 @@
+[CODE]  
+class Animal {}  
+class Dog extends Animal { String breed = "Labrador"; }  
+public class Main {  
+    public static void main(String[] args) {  
+        Animal myPet = new Dog();  
+        System.out.println(myPet.breed);  
+    }  
+}  
+[OUTPUT]  
+KM: The field 'breed' belongs to the Dog class, but the reference type Animal does not have this field.  
+KH: Cast myPet to Dog (e.g., ((Dog) myPet).breed) or declare myPet as Dog to access the subclass field.  

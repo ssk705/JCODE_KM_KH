@@ -1,0 +1,18 @@
+[CODE]
+public class Stack {
+    private Node top;
+
+      private class Node {
+        int data;
+        Node next;
+    }
+    public int pop() {
+        int value = topValue;
+        Node oldTop = top;
+        top = top.next;  
+        return value;
+    }
+}
+[OUTPUT]
+KM: The popped node (`oldTop`) retains a reference to the new `top` via `next`, preventing garbage collection and causing memory leaks.  
+KH: Set `oldTop.next = null` after updating `top` to remove unnecessary references.

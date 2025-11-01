@@ -1,0 +1,16 @@
+[CODE]
+public class DoublyLinkedList {
+     class Node {
+        int data;
+        Node next;
+        Node prev;
+    }
+   public void insertAfter(Node prevNode, int data) {
+    Node newNode = new Node(data);
+    newNode.next = prevNode.next;  
+    prevNode.next = newNode;      
+} 
+}
+[OUTPUT]
+KM:The new node's `prev` pointer isn't set to `prevNode`, and the node *after* `newNode` doesn't have its `prev` updated to point back.  
+KH:Set `newNode.prev = prevNode` and update `newNode.next.prev = newNode` (after `newNode.next` is assigned) to maintain bidirectional links

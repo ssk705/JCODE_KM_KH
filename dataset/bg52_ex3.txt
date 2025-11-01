@@ -1,0 +1,10 @@
+[CODE]
+class Animal {
+    public Animal(String species) { }
+}
+class Dog extends Animal {
+    public Dog() { }
+}
+[OUTPUT]
+KM: The Dog constructor implicitly calls super(), but the Animal class has no default constructor. The superclass constructor requires a String parameter (species).  
+KH: Explicitly call super("speciesName") in the Dog constructor to provide the required String argument for the Animal superclass.

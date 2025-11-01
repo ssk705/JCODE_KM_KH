@@ -1,0 +1,12 @@
+[CODE]
+public class LoopOverString {
+    public static void main(String[] args) {
+        String word = "Hello";
+        for (int i = 0; i < word; i++) {
+            System.out.println(word.charAt(i));
+        }
+    }
+}
+[OUTPUT]
+KM: Type mismatch: Using a `String` variable `word` directly in a loop condition where an integer (like string length) is expected.  
+KH:Replace `word` with `word.length()` to use the string's length for loop iteration boundaries.

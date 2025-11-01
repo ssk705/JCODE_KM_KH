@@ -1,0 +1,9 @@
+[CODE]  
+public class TestScanner {  
+    public static void main(String[] args) {  
+        Scannerr scanner = new Scannerr(System.in);  
+    }  
+}  
+[OUTPUT]  
+KM: The class name "Scannerr" is misspelled. The correct class name is "Scanner".  
+KH: Replace "Scannerr" with "Scanner" in both the declaration and constructor to use the correct Java class.

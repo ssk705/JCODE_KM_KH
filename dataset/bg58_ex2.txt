@@ -1,0 +1,11 @@
+[CODE]  
+public class Bg582 {
+    public static void main(String[] args) {
+        /* This is a comment about the calculation
+        int a = 5 + 3;
+        System.out.println("Result: " + a);
+    }
+} 
+[OUTPUT]  
+KM: The multi-line comment lacks a closing `*/`, causing all subsequent code to be treated as part of the comment. This results in unreachable code errors.  
+KH: Always ensure every `/*` has a matching `*/` at the end of the comment section.

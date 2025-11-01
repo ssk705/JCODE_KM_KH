@@ -1,0 +1,10 @@
+[CODE]  
+public class Test {  
+    int x = 5;  
+    public static void main(String[] args) {  
+        System.out.println(x);  
+    }  
+}  
+[OUTPUT]  
+KM: The static method `main` cannot directly access the non-static variable `x` because static methods belong to the class, not an instance.  
+KH: Create an object of the `Test` class (e.g., `Test obj = new Test();`) and access `x` through it (e.g., `obj.x`).  

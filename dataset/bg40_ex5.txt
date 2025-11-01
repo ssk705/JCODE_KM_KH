@@ -1,0 +1,11 @@
+[CODE]
+public class CalculateSum {
+    public static void main(String[] args) {
+        int x = 5, y = 10;
+        int sum = x + y;
+        System.out.printLine("Sum is: " + sum);
+    }
+}
+[OUTPUT]
+KM: `printLine` is incorrectly used instead of `println`, causing an "undefined method" error.  
+KH: Replace `printLine` with `println` to print the concatenated string and number with a line break.  

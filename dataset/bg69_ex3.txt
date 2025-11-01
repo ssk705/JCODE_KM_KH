@@ -1,0 +1,21 @@
+[CODE]
+public class DoublyLinkedList {
+    class Node {
+        int data;
+        Node next;
+        Node prev;
+    }
+
+    public void deleteHead() {
+        if (head == null) return;
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            head = head.next;  
+        }
+    }
+}
+
+[OUTPUT]
+KM:Deleting the head in a multi-node list fails to set the new head's `prev` to `null`, leaving a dangling reference to the old head. 
+KH:After `head = head.next`, add `head.prev = null` to break the link to the old head. Also, handle the case where the list becomes empty.  

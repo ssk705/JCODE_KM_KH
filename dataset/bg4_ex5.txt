@@ -1,0 +1,11 @@
+[CODE]  
+public class Bg45 {  
+    public static void main(String[] args) {  
+        int sum = 0;  
+        for (int i = 0; i < 10; i++);  
+            sum += i;  
+    }  
+}  
+[OUTPUT]  
+KM: A semicolon after the `for` loop ends the loop’s scope, making the variable `i` inaccessible in `sum += i`.  
+KH: Remove the semicolon after the `for` loop to include `sum += i` within the loop body.

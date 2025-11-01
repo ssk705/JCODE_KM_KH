@@ -1,0 +1,10 @@
+[CODE]  
+public class Bg15 {  
+    public static void main(String[] args) {  
+        String result = (args[0] == "debug") ? "Debug Mode" : "Normal Mode";  
+        System.out.println(result);  
+    }  
+}  
+[OUTPUT]  
+KM: Using '==' in a ternary operator to compare command-line arguments with a string literal will fail due to object reference differences.  
+KH: Use '.equals()' to compare the argument with the literal (e.g., args[0].equals("debug")).

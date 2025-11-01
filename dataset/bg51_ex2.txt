@@ -1,0 +1,20 @@
+[CODE]
+public class Queue {
+    private Node head, tail;
+    private class Node {
+        int data;
+        Node next;
+    }
+    public void enqueue(int data) {
+        Node newNode = new Node(data);
+        if (tail == null) {
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+    }
+}
+[OUTPUT]
+KM:When the queue is empty (`head` is null), setting only `tail = newNode` leaves `head` uninitialized.  
+KH:In the `tail == null` branch, set _both_ `head` and `tail` to the new node using `head = tail = newNode;`.

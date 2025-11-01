@@ -1,0 +1,13 @@
+[CODE]  
+public class RangeSum {  
+    public static void main(String[] args) {  
+        int total = 0;  
+        for (int i = 1; i < 5; i++) {  
+            total += i;  
+        }  
+        System.out.println(total);  
+    }  
+}  
+[OUTPUT]  
+KM: The loop runs from 1 to 4 (since **i < 5**), excluding the upper bound value 5.  
+KH: Adjust the loop condition to **i <= 5** to include the value 5 in the sum.  

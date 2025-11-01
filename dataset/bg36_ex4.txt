@@ -1,0 +1,10 @@
+[CODE]
+import java.util.ArrayList;
+public class Demo {
+    public static void main(String[] args) {
+        ArrayList<int> list = new ArrayList<>();
+    }
+}
+[OUTPUT]
+KM:Generics (`<>`) require reference types (e.g., `Integer`), not primitives like `int`.
+KH:Use the wrapper class for primitives in generics, such as `ArrayList<Integer>`.  

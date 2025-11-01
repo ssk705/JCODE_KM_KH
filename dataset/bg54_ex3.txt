@@ -1,0 +1,13 @@
+[CODE]
+public class CompoundCondition {
+    public static void main(String[] args) {
+        int score = 85;
+        boolean extraCredit = true;
+        if (score >= 80 && score < 90 || extraCredit) {
+            System.out.println("Grade: B");
+        }
+    }
+}
+[OUTPUT]
+KM:The condition `score >= 80 && score < 90 || extraCredit` groups as `(score >= 80 && score < 90) || extraCredit` due to `&&` precedence over `||`. This may incorrectly include scores below 80 with `extraCredit=true`.  
+KH:Use parentheses to isolate the OR (`||`) clause when needed, e.g., `score >= 80 && (score < 90 || extraCredit)`.

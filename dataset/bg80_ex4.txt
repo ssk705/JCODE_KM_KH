@@ -1,0 +1,9 @@
+[CODE]  
+public class Bg804 {  
+    public static int getStringLength(String input) {  
+        return input.length;  
+    }  
+}  
+[OUTPUT]  
+KM: Attempting to access the length of a String using `.length` as a field, which is invalid.  
+KH: Use the method `.length()` for Strings, e.g., `input.length()`.  

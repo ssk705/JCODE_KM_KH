@@ -1,0 +1,17 @@
+[CODE]
+public class ArrayStack {
+    private int[] stack;
+    private int top;
+    
+    public ArrayStack(int capacity) {
+        stack = new int[capacity];
+        top = -1;
+    }
+    
+    public int pop() {
+        return stack[top--];
+    }
+}
+[OUTPUT]
+KM:The `pop()` method does not check if the stack is empty before accessing `stack[top]`. This causes an `ArrayIndexOutOfBoundsException` when popping from an empty stack (e.g., `top = -1`).  
+KH:Add an explicit underflow check at the start of `pop()` (e.g., `if (isEmpty()) throw new EmptyStackException();`).

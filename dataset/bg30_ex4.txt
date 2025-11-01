@@ -1,0 +1,18 @@
+[CODE]
+ public class Calculator {
+    public static void main(String[] args) {
+        char operator = '+';
+        int a = 5, b = 3;
+        switch (operator) {
+            case '+':
+                System.out.println(a + b);
+            case '-':
+                System.out.println(a - b);
+            case '*':
+                System.out.println(a * b);
+        }
+    }
+}
+[OUTPUT]
+KM:Missing `break` causes all operations after `+` to execute. 
+KH:Add `break;` after each arithmetic operation to isolate cases.  

@@ -1,0 +1,13 @@
+[CODE]
+public class Fibonacci {
+    public static int fib(int n) {
+        if (n <= 1) return n;
+        fib(n - 1);
+        fib(n - 2);
+        return fib(n - 1) + fib(n - 2);
+    }
+}
+[OUTPUT]
+KM: 1. Extra recursive calls (`fib(n-1)` and `fib(n-2)`) are discarded instead of storing results, wasting computation.  
+    2. Duplicate calculations cause exponential inefficiency (e.g., `fib(n-1)` is computed twice).  
+KH: Store results of recursive calls in variables and combine them once (e.g., `int a = fib(n-1); int b = fib(n-2)`). Avoid redundant calls.

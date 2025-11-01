@@ -1,0 +1,10 @@
+[CODE]  
+public class Student {  
+    name String = "Alice";  
+    public void printName() {  
+        System.out.println(name);  
+    }  
+}  
+[OUTPUT]  
+KM: The class field `name String` incorrectly places the variable name before the type `String`.  
+KH: Declare class fields with the type first (e.g., `String name`) followed by the variable name. 

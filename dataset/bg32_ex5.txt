@@ -1,0 +1,13 @@
+[CODE]  
+public class Tree {  
+    public Tree() {}  
+}  
+
+public class Forest {  
+    public Tree getTree() {  
+        return new Tree;  
+    }  
+}  
+[OUTPUT]  
+KM: The return statement attempts to create a Tree object without parentheses, which is invalid.  
+KH: Correct the return statement by adding parentheses to the constructor: 'return new Tree();'.

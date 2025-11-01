@@ -1,0 +1,10 @@
+[CODE]  
+public class PrintMessage {  
+    public static void main(String[] args) {  
+        System.out.println("Inside main");  
+    }  
+    System.out.println("Outside main");  
+}  
+[OUTPUT]  
+KM: The statement `System.out.println("Outside main");` is placed directly in the class body, not inside any method, causing a compilation error.  
+KH: Move the print statement into a method, such as the `main` method, or create a new method/constructor to contain it. 

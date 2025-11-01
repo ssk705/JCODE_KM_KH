@@ -1,0 +1,10 @@
+[CODE] 
+import java.io.FileReader; 
+public class Bg331 {  
+    public static void main(String[] args) {  
+        FileReader file = new FileReader("test.txt");  
+    }  
+}  
+[OUTPUT]  
+KM: The FileReader constructor throws FileNotFoundException, a checked exception, which is not handled or declared in the method signature.  
+KH: Use a try-catch block to handle the exception or add 'throws FileNotFoundException' to the main method declaration.  

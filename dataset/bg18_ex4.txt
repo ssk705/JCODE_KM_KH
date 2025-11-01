@@ -1,0 +1,13 @@
+[CODE]
+public class Demo {
+    public static String getValue() {
+        return "5";
+    }
+    
+    public static void main(String[] args) {
+        int value = getValue();  
+    }
+}
+[OUTPUT]
+KM: `getValue` returns a `String`, but the caller tries to assign it to an `int` variable. Strings and primitives like `int` are incompatible without explicit conversion.  
+KH: Change `value` to `String` type, or convert the returned `String` to `int` using `Integer.parseInt()` before assignment.  

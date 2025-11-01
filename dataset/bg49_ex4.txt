@@ -1,0 +1,13 @@
+[CODE]  
+public class Bg494 {  
+    static void printElement(int x) {  
+        System.out.println(x);  
+    }  
+    public static void main(String[] args) {  
+        int[] arr = {7};  
+        printElement(arr);  
+    }  
+}  
+[OUTPUT]  
+KM: The entire array 'arr' is passed to a method expecting an integer parameter, causing a type mismatch.  
+KH: Pass a specific element of the array (e.g., arr[0]) as the method argument instead of the array itself.  

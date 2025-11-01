@@ -1,0 +1,21 @@
+[CODE]
+public class DoublyLinkedList {
+     class Node {
+        int data;
+        Node next;
+        Node prev;
+    }
+    public void insertAtTail(int data) {
+        Node newNode = new Node(data);
+        if (tail == null) {
+            head = tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode; 
+        }
+    }
+}
+
+[OUTPUT]
+KM: Inserting at the tail omits setting the new node's `prev` to the old tail, preventing backward traversal from the new node.  
+KH: Before updating `tail = newNode`, add `newNode.prev = tail` to establish the reverse link.  

@@ -1,0 +1,15 @@
+[CODE]  
+public interface Shape {  
+    void draw();  
+}  
+class Circle implements Shape {  
+    public void draw() {  
+        System.out.println("Drawing circle");  
+    }  
+    public void draw() {  
+        System.out.println("Drawing another circle");  
+    }  
+}  
+[OUTPUT]  
+KM: The 'draw()' method from the 'Shape' interface is implemented twice in 'Circle', causing duplication.  
+KH: Implement the 'draw()' method only once in the class to adhere to interface contract rules.

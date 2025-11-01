@@ -1,0 +1,10 @@
+[CODE]
+pubic calss Calculator {
+    public int add(int a, int b) {
+        retrun a + b;
+    }
+}
+[OUTPUT]
+KM:The keyword `class` is misspelled as `calss`, and `public` is misspelled as `pubic
+KH:Correct `pubic` to `public` and `calss` to `class` in the class declaration.
+  

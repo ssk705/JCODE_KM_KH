@@ -1,0 +1,12 @@
+[CODE]
+public class Example2 {
+    public static void main(String[] args) {
+        int i = 0;
+        while (++i < 5) {
+            System.out.print(i + " ");
+        }
+    }
+}
+[OUTPUT]
+KM: Pre-increment (`++i`) in the condition updates `i` *before* checking `i < 5`. This skips `0` (initial value) and starts printing from `1`, terminating at `4` instead of the expected `0` to `4`.  
+KH: Move the increment *inside* the loop body to preserve the initial value in the condition check. Use `i++` in the condition if you need the original value for the check and only increment afterward.  

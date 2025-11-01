@@ -1,0 +1,11 @@
+[CODE]
+public class Example2 {
+    public static void main(String[] args) {
+        for (int i=0; i<5; i++) {
+            System.out.println(i);
+           
+    }
+}
+[OUTPUT]
+KM: missing closing brace for the for loop, leading to a compilation error.
+KH: add the closing brace after the loop's body

@@ -1,0 +1,10 @@
+[CODE]  
+public class MaxExample {  
+    public static void main(String[] args) {  
+        int maximum = Math.max(5 10);  
+        System.out.println(maximum);  
+    }  
+}  
+[OUTPUT]  
+KM: Missing comma between the parameters `5` and `10` in the `Math.max` method call.  
+KH: Add a comma between the two arguments, e.g., `Math.max(5, 10)`.  

@@ -1,0 +1,11 @@
+[CODE]
+public class Bg244 {
+    public int calculate() {
+        int result;
+         
+        return result;
+    }
+}
+[OUTPUT]
+KM: The variable 'result' is not initialized before being returned, resulting in a compilation error. Local variables must be assigned a value before use.
+KH: Ensure 'result' is assigned a value in all possible code paths before the return statement.

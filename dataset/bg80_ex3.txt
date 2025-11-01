@@ -1,0 +1,12 @@
+[CODE]  
+public class Bg803 {  
+    public static void main(String[] args) {  
+        String[] fruits = {"apple", "banana"};  
+        if (fruits[0].length == fruits[1].length()) {  
+            System.out.println("Equal lengths");  
+        }  
+    }  
+}  
+[OUTPUT]  
+KM: Mixing `.length` (incorrect for Strings) and `.length()` (correct) when comparing String lengths.  
+KH: Consistently use `.length()` for Strings and `.length` for arrays to avoid mismatches.  

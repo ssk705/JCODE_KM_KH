@@ -1,0 +1,9 @@
+[CODE]
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = new [5];
+    }
+}
+[OUTPUT]
+KM:Array creation requires the type **before** brackets (e.g., `new int[5]`).  
+KH:Declare the array type explicitly, like `new int[5]`.  

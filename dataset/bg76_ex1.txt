@@ -1,0 +1,14 @@
+[CODE]  
+public class SumArray {  
+    public static void main(String[] args) {  
+        int[] arr = {1, 2, 3, 4};  
+        int sum = 0;  
+        for (int i = 0; i < arr.length - 1; i++) {  
+            sum += arr[i];  
+        }  
+        System.out.println(sum);  
+    }  
+}  
+[OUTPUT]  
+KM: The loop condition stops at index **arr.length - 2** because **i < arr.length - 1**, excluding the last element (index **arr.length - 1**).  
+KH: Modify the loop condition to **i < arr.length** to iterate through all elements.  
