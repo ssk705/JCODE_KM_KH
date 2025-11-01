@@ -1,5 +1,5 @@
 [CODE]
-public class Example2 {
+public class Bg342 {
     public static void main(String[] args) {
         System.out.println("Hello World"):
     }

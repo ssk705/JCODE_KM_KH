@@ -1,5 +1,5 @@
 [CODE]
-public class MissingSemicolon5 {
+public class Bg345 {
     public static int calculate() {
         return 42:
     }
