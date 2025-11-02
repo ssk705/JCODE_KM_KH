@@ -1,5 +1,5 @@
 [CODE]  
-public class SubstringExample {  
+public class Bg264 {  
     public static void main(String[] args) {  
         String text = "example";  
         String sub = substring(0, 3);  

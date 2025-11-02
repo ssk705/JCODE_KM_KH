@@ -1,5 +1,5 @@
 [CODE]  
-public class CaseSensitive {  
+public class Bg262 {  
     public static void main(String[] args) {  
         printvalue("Hello");  
     }  

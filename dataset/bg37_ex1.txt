@@ -1,5 +1,5 @@
 [CODE]
-public class Adder {
+public class Bg371 {
     public int sum(int x, int y) {
         int result = x + y;
         retrun result;

@@ -1,5 +1,5 @@
 [CODE]
-public class Output {
+public class Bg374 {
     public static void main(Stirng[] args) {
         Stirng message = "Hello";
         System.out.println(message);

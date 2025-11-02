@@ -1,5 +1,5 @@
 [CODE]
-public class Check {
+public class Bg373 {
     public static void main(String[] args) {
         booelan flag = true;
         if (flag) {
