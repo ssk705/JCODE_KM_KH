@@ -1,7 +1,9 @@
  
 [View PDF](./BugID_Description_sources.pdf) 
 
+[View PDF](./Model_Responses_and_Examples.pdf)
 
+<iframe src="BugID_Description_sources.pdf" width="100%" height="800px"></iframe>
 
  The following research papers were reviewed to identify the common student programming errors. 
  
