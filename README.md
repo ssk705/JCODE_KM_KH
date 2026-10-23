@@ -1,13 +1,6 @@
 # Java bug catalog with structured Knowledge about mistakes (KM) and Knowledge about how to proceed (KH) feedback. 
 
-This project examines existing research on novice programmer mistakes and compiles the identified errors into a structured dataset. The dataset is intended to support analysis and enhance understanding of common programming errors. The repository includes a dataset folder containing sample code for each type of bug.
-
-
-The bug types identified in the literature are documented in the accompanying PDF [View PDF](./BugID_Description_sources.pdf) .
-
-
-
-The model responses for the sample code, together with the corresponding feedback, are available here [View PDF](./Model_Responses_and_Examples.pdf)
+This project examines existing research on novice programmer mistakes and compiles the identified errors into a structured dataset. The dataset is intended to support analysis and enhance understanding of common programming errors. The repository includes a dataset folder containing sample code for each type of bug. The bug types identified in the literature are documented in the accompanying PDF [View PDF](./BugID_Description_sources.pdf) .   The model responses for the sample code, together with the corresponding feedback, are available here [View PDF](./Model_Responses_and_Examples.pdf)
 
 
 The following is a list of research papers reviewed to identify common student programming errors.
